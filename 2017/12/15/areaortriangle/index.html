@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="我行我数">
 <meta property="og:description" content="中线已知 $ \triangle ABC $ 的三条中线分别为 $ m_a,m_b,m_c $,记 $ m=\frac{m_a+m_b+m_c}{2} $ ,则 $\triangle ABC$的面积为 $$ S=\dfrac{4}{3}\sqrt{m(m-m_a)(m-m_b)(m-m_c)} $$ 高已知 $ \triangle ABC $ 的三条高分别为 $ h_a,h_b,h_c $,记 $">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-16T15:19:06.000Z">
+<meta property="og:updated_time" content="2017-12-16T15:46:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="类似于海伦公式的三角形的面积公式">
 <meta name="twitter:description" content="中线已知 $ \triangle ABC $ 的三条中线分别为 $ m_a,m_b,m_c $,记 $ m=\frac{m_a+m_b+m_c}{2} $ ,则 $\triangle ABC$的面积为 $$ S=\dfrac{4}{3}\sqrt{m(m-m_a)(m-m_b)(m-m_c)} $$ 高已知 $ \triangle ABC $ 的三条高分别为 $ h_a,h_b,h_c $,记 $">
@@ -735,7 +735,7 @@
   
 
 
-  <script type="text/javascript" src="/zhaowanlong.github.io/js/src/bootstrap.js?v=5.1.3"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script type="text/javascript" src="/zhaowanlong.github.io/js/src/bootstrap.js?v=5.1.3"></script>
 
 
 
@@ -788,6 +788,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
