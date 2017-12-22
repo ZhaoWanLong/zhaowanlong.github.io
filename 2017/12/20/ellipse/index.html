@@ -88,7 +88,7 @@
 <meta property="og:description" content="题目 如图,椭圆 $ \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a&amp;gt;b&amp;gt;0) $ 的内切圆 $ x^2+y^2=b^2 $ 的一条切线与椭圆交于点 $ A,B $,且切线 $ AB $ 与圆的切点 $ Q $ 在 $ y $ 轴右侧, $ F $ 为椭圆的右焦点,求 $ \triangle AFB $ 的周长.     解法一设 $ A(a\cos\the">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/image/15137842332803.png">
-<meta property="og:updated_time" content="2017-12-22T01:40:31.000Z">
+<meta property="og:updated_time" content="2017-12-22T01:43:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="定值中的定值">
 <meta name="twitter:description" content="题目 如图,椭圆 $ \dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1(a&amp;gt;b&amp;gt;0) $ 的内切圆 $ x^2+y^2=b^2 $ 的一条切线与椭圆交于点 $ A,B $,且切线 $ AB $ 与圆的切点 $ Q $ 在 $ y $ 轴右侧, $ F $ 为椭圆的右焦点,求 $ \triangle AFB $ 的周长.     解法一设 $ A(a\cos\the">
@@ -418,13 +418,7 @@
 <li>当直线 $AB$ 的斜率不存在时，设 $AB$ 的方程为 $x=b$,此时可得 $A\left(b,\dfrac{bc}{a}\right)$,$B\left(b,-\dfrac{bc}{a}\right)$,所以 $\triangle AFB$ 的周长为 $$2\cdot \dfrac{bc}{a}+2\left(a-eb\right)=2a.$$</li>
 <li><p>当直线 $AB$ 的斜率存在时，设 $AB$ 的方程为 $y=kx+m $ , $ km&lt;0 . $<br>因为直线 $ AB $ 与圆 $ x^2+y^2=b^2 $ 相切可得<br>$$ d=\dfrac{|m|}{k^2+1}=b $$<br>所以 $$m^2=(k^2+1)b^2\qquad\qquad (1)$$<br>由 $ \left\{\begin{split}<br>y=kx+m,\\\ <br>\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1,\end{split}<br>\right.$  消去 $y$ 得<br>$$ (ak^2+b^2)x^2+2kma^2 x+a^2m^2-a^2b^2=0 $$<br>所以</p>
 <p>$$ x_1+x_2=\dfrac{-2kma^2}{a^2k^2+b^2},\qquad x_1x_2=\dfrac{a^2m^2-a^2b^2}{a^2k^2+b^2}. $$ </p>
-<p>$$ \Delta =4k^2m^2a^4-4(a^2k^2+b^2)(a^2m^2-a^2b^2)=4a^2b^2(a^2k^2+b^2-m^2)=4a^2b^2c^2k^2&gt;0. $$<br>所以 $\triangle AFB$ 的周长<br>注意到 $ m^2=(k^2+1)b^2 $可得 $$<br> \begin{aligned}<br>   |AF|+|BF|+|AB| &amp; =(a-ex_1)+(a-ex_2)+\sqrt{1+k^2}|x_2-x_1|\\\\</p>
-<pre><code>    &amp; = 2a-e(x_1+x_2)+\sqrt{1+k^2}|x_2-x_1|\\\\
-          &amp; = 2a+\dfrac{2kmac}{a^2k^2+b^2}+\dfrac{|m|}{b}\times\dfrac{2abc|k|}{a^2k^2+b^2}\\\\
-&amp; = 2a+\dfrac{2ac}{a^2k^2+b^2}\times(km+|km|)\\\\
-        &amp; = 2a.
-  \end{aligned}
-</code></pre><p> $$<br>其中用到 $k$ 与 $m$ 异号.<br>综上所述， $\triangle AFB$ 的周长为 $2a$.</p>
+<p>$$ \Delta =4k^2m^2a^4-4(a^2k^2+b^2)(a^2m^2-a^2b^2)=4a^2b^2(a^2k^2+b^2-m^2)=4a^2b^2c^2k^2&gt;0. $$<br>所以 $\triangle AFB$ 的周长<br>注意到 $ m^2=(k^2+1)b^2 $可得<br>$$ \begin{aligned}<br>   |AF|+|BF|+|AB| &amp; =(a-ex_1)+(a-ex_2)+\sqrt{1+k^2}|x_2-x_1|\\\\&amp; = 2a-e(x_1+x_2)+\sqrt{1+k^2}|x_2-x_1|\\\ &amp; = 2a+\dfrac{2kmac}{a^2k^2+b^2}+\dfrac{|m|}{b}\times\dfrac{2abc|k|}{a^2k^2+b^2}\\\\&amp; = 2a+\dfrac{2ac}{a^2k^2+b^2}\times(km+|km|)\\\ &amp; = 2a.\end{aligned}$$<br>其中用到 $k$ 与 $m$ 异号.<br>综上所述， $\triangle AFB$ 的周长为 $2a$.</p>
 </li>
 </ol>
 
