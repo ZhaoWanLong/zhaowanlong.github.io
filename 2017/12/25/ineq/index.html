@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="math520">
 <meta property="og:description" content="题目若实数 $a,b,c,d$ 满足  $ a^2+b^2=c^2+d^2 $ ,求 $$ \dfrac{20bc+14bd+20ad-14ac}{a^2+b^2+c^2+d^2} $$ 的最大值. 解法一由柯西不等式 $$  \left( 20 (bc + ad) + 14 (bd - ac) \right)^ 2 \leqslant \left( 20^2 + 14^2 \right) \le">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-25T08:46:27.000Z">
+<meta property="og:updated_time" content="2017-12-25T08:48:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="柯西不等式邂逅拉格朗日恒等式">
 <meta name="twitter:description" content="题目若实数 $a,b,c,d$ 满足  $ a^2+b^2=c^2+d^2 $ ,求 $$ \dfrac{20bc+14bd+20ad-14ac}{a^2+b^2+c^2+d^2} $$ 的最大值. 解法一由柯西不等式 $$  \left( 20 (bc + ad) + 14 (bd - ac) \right)^ 2 \leqslant \left( 20^2 + 14^2 \right) \le">
@@ -424,7 +424,7 @@
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>若实数 $a,b,c,d$ 满足  $ a^2+b^2=c^2+d^2 $ ,求 $$ \dfrac{20bc+14bd+20ad-14ac}{a^2+b^2+c^2+d^2} $$ 的最大值.</p>
 <h1 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h1><p>由柯西不等式 $$  \left( 20 (bc + ad) + 14 (bd - ac) \right)^ 2 \leqslant \left( 20^2 + 14^2 \right) \left( ( bc+ ad)^2 + (bd-ac)^2 \right)= 596( a^2 + b^2)(c^2+d^2)   $$ 由拉格朗日恒等式 $$  (a^2 + b^2) ( c^2 + d^2) = ( bc + ad) ^2 + (bd - ac) ^2  $$ 与 $ a^2+b^2=c^2+d^2 $ 可得  $$  \left( 20 (bc + ad) + 14 (bd - ac) \right)^ 2 \leqslant 596 ( a^2 + b^2)^2   $$ 所以 $$  \left| \frac{ 20 (bc+ad) + 14 (bd - ac) } { a^2 + b^2 + c^2 + d^2 } \right| \leqslant \sqrt{ 149 }.  $$ </p>
 <p>当  $ a = 0, b = \sqrt{596}, c = 20, d = 14 $ 时取最大值 $ \sqrt{149} $.</p>
-<h1 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h1><p> 设 $ a^2+b^2=c^2+d^2=r^2 $ ,则可设 $$  a=r\sin\alpha,b=r\cos\alpha,  c=r\sin\beta, d=r\cos\beta $$ 于是  $$ \begin{split} &amp; \frac{ 20 (bc+ad) + 14 (bd - ac) } { a^2 + b^2 + c^2 + d^2 }\ = &amp; \dfrac{20r^2\cos\alpha\sin\beta + 14r^2\cos\alpha\cos\beta + 20r^2\sin\alpha\cos\beta - 14r^2 \sin\alpha\sin\beta}{2r^2}\\\ = &amp; 10(\sin\alpha\cos\beta + \sin\beta\cos\alpha)+7(\cos\alpha\cos\beta-\sin\alpha\sin\beta)\\\ = &amp; 10\sin(\alpha+\beta)+7\cos(\alpha+\beta)\\\ = &amp; \sqrt{149}\sin\left( \alpha+\beta+\varphi \right)\leqslant \sqrt{149}.\\\ \end{split} $$  其中 $ \cos\varphi=\dfrac{10}{\sqrt{149}},\sin\varphi=\dfrac{7}{\sqrt{149}} $ ,<br> 当 $ \sin\left( \alpha+\beta \right)=\cos\varphi,\cos\left( \alpha+\beta \right)=\sin\varphi $ 等式成立.<br> 可取 $ a = 0, b = \sqrt{596}, c = 20, d = 14 $ ,使得等式成立，所以最大值为 $ \sqrt{149} $.</p>
+<h1 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h1><p> 设 $ a^2+b^2=c^2+d^2=r^2 $ ,则可设 $$  a=r\sin\alpha,b=r\cos\alpha,  c=r\sin\beta, d=r\cos\beta $$ 于是  $$ \begin{split} &amp; \frac{ 20 (bc+ad) + 14 (bd - ac) } { a^2 + b^2 + c^2 + d^2 }\\\ = &amp; \dfrac{20r^2\cos\alpha\sin\beta + 14r^2\cos\alpha\cos\beta + 20r^2\sin\alpha\cos\beta - 14r^2 \sin\alpha\sin\beta}{2r^2}\\\ = &amp; 10(\sin\alpha\cos\beta + \sin\beta\cos\alpha)+7(\cos\alpha\cos\beta-\sin\alpha\sin\beta)\\\ = &amp; 10\sin(\alpha+\beta)+7\cos(\alpha+\beta)\\\ = &amp; \sqrt{149}\sin\left( \alpha+\beta+\varphi \right)\leqslant \sqrt{149}.\\\ \end{split} $$  其中 $ \cos\varphi=\dfrac{10}{\sqrt{149}},\sin\varphi=\dfrac{7}{\sqrt{149}} $ ,<br> 当 $ \sin\left( \alpha+\beta \right)=\cos\varphi,\cos\left( \alpha+\beta \right)=\sin\varphi $ 等式成立.<br> 可取 $ a = 0, b = \sqrt{596}, c = 20, d = 14 $ ,使得等式成立，所以最大值为 $ \sqrt{149} $.</p>
 
       
     </div>
