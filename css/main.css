@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5d002d;
+  background: #e4871b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2909,7 +2909,4 @@ hr {
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
-}
-.menu .menu-item a:hover {
-  border-bottom-color: rgba(161,102,171,0);
 }
