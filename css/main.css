@@ -277,15 +277,15 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #555;
+  color: #0684bd;
   text-decoration: none;
   outline: none;
-  border-bottom: 1px solid #f39d01;
+  border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
 a:hover {
-  color: #0684bd;
-  border-bottom-color: #0684bd;
+  color: #222;
+  border-bottom-color: #222;
 }
 blockquote {
   margin: 0;
@@ -386,7 +386,7 @@ kbd {
 .translation {
   margin-top: -20px;
   font-size: 14px;
-  color: #f39d01;
+  color: #999;
 }
 .scrollbar-measure {
   width: 100px;
@@ -906,7 +906,7 @@ pre .javascript .function {
   width: 1.285714285714286em;
 }
 .post-body .tabs ul.nav-tabs li.tab.active {
-  border-top: 3px solid #bbb;
+  border-top: 3px solid #fc6423;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   background-color: #fff;
@@ -914,14 +914,14 @@ pre .javascript .function {
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab.active {
     border-top: 1px solid #ddd;
-    border-left: 3px solid #bbb;
+    border-left: 3px solid #fc6423;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
   }
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: #555;
+  color: #0684bd;
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -940,9 +940,9 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #555;
+  color: #0684bd;
   background: transparent;
-  border: 2px solid #0684bd;
+  border: 2px solid #222;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -952,8 +952,8 @@ pre .javascript .function {
   line-height: 2;
 }
 .btn:hover {
-  border-color: #0684bd;
-  color: #0684bd;
+  border-color: #222;
+  color: #222;
   background: #fff;
 }
 .btn +.btn {
@@ -1011,7 +1011,7 @@ pre .javascript .function {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #0684bd;
+  border-top-color: #222;
 }
 .pagination .space {
   padding: 0;
@@ -1043,7 +1043,7 @@ pre .javascript .function {
   .pagination .prev:hover,
   .pagination .next:hover,
   .pagination .page-number:hover {
-    border-bottom-color: #0684bd;
+    border-bottom-color: #222;
   }
 }
 .comments {
@@ -1064,7 +1064,7 @@ pre .javascript .function {
   z-index: 1050;
   padding: 0 6px;
   width: 24px;
-  background: #0684bd;
+  background: #222;
   font-size: 12px;
   opacity: 1;
   color: #fff;
@@ -1097,7 +1097,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #0684bd;
+  background: #222;
 }
 .site-meta {
   margin: 0;
@@ -1112,12 +1112,12 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #0684bd;
-  background: #0684bd;
+  color: #222;
+  background: #222;
   border-bottom: none;
 }
 .brand:hover {
-  color: #0684bd;
+  color: #222;
 }
 .logo {
   display: inline-block;
@@ -1136,7 +1136,7 @@ pre .javascript .function {
 .site-subtitle {
   margin-top: 10px;
   font-size: 13px;
-  color: #f39d01;
+  color: #999;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1210,7 +1210,7 @@ pre .javascript .function {
   transition-delay: 0s;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: #0684bd;
+  border-bottom-color: #222;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1238,7 +1238,7 @@ pre .javascript .function {
   margin: -20px auto 15px;
   text-align: center;
   font-size: 14px;
-  color: #f39d01;
+  color: #999;
   font-weight: bold;
   line-height: 1;
 }
@@ -1421,7 +1421,7 @@ pre .javascript .function {
   border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
-  background: #0684bd;
+  background: #222;
 }
 .posts-collapse .post-meta {
   position: absolute;
@@ -1496,7 +1496,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #f39d01;
+  color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1507,7 +1507,7 @@ pre .javascript .function {
   padding: 3px;
 }
 .posts-expand .post-meta .post-category-list-link {
-  color: #f39d01;
+  color: #999;
 }
 .posts-expand .post-meta .post-description {
   font-size: 14px;
@@ -1577,11 +1577,11 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #555;
+  color: #0684bd;
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #0684bd;
+  color: #222;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1666,11 +1666,11 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: #0684bd;
+  background: #222;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
-  color: #f39d01;
+  color: #999;
   border-bottom-color: #555;
 }
 .sidebar a:hover {
@@ -1689,7 +1689,7 @@ pre .javascript .function {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #f39d01;
+  color: #999;
   text-align: center;
 }
 .site-overview-wrap {
@@ -1706,7 +1706,7 @@ pre .javascript .function {
   width: 14px;
   height: 14px;
   padding: 5px;
-  background: #0684bd;
+  background: #222;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1752,7 +1752,7 @@ pre .javascript .function {
   margin-top: 5px;
   text-align: center;
   font-size: 14px;
-  color: #f39d01;
+  color: #999;
 }
 .site-state {
   overflow: hidden;
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9106ff;
+  background: #3642e3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1906,7 +1906,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #f39d01;
+  color: #999;
   border-bottom-color: #555;
 }
 .post-toc ol a:hover {
@@ -1943,7 +1943,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #f39d01;
+  color: #999;
 }
 .footer img {
   border: none;
@@ -2675,7 +2675,7 @@ hr {
   position: relative;
   display: block;
   height: 2px;
-  background: #0684bd;
+  background: #222;
 }
 @media (max-width: 767px) {
   .logo-line-before i,
@@ -2790,7 +2790,7 @@ hr {
   }
 }
 .posts-expand .post-title:hover:before {
-  background: #0684bd;
+  background: #222;
 }
 @media (max-width: 767px) {
   .posts-expand .post-body {
@@ -2837,7 +2837,7 @@ hr {
   }
 }
 .post-button a:hover {
-  border-bottom-color: #0684bd;
+  border-bottom-color: #222;
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
