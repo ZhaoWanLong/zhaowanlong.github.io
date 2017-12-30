@@ -280,7 +280,7 @@ a {
   color: #555;
   text-decoration: none;
   outline: none;
-  border-bottom: 1px solid #999abc;
+  border-bottom: 1px solid #bbb;
   word-wrap: break-word;
 }
 a:hover {
@@ -386,7 +386,7 @@ kbd {
 .translation {
   margin-top: -20px;
   font-size: 14px;
-  color: #999abc;
+  color: #bbb;
 }
 .scrollbar-measure {
   width: 100px;
@@ -1136,7 +1136,7 @@ pre .javascript .function {
 .site-subtitle {
   margin-top: 10px;
   font-size: 13px;
-  color: #999abc;
+  color: #bbb;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1238,7 +1238,7 @@ pre .javascript .function {
   margin: -20px auto 15px;
   text-align: center;
   font-size: 14px;
-  color: #999abc;
+  color: #bbb;
   font-weight: bold;
   line-height: 1;
 }
@@ -1496,7 +1496,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999abc;
+  color: #bbb;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1507,7 +1507,7 @@ pre .javascript .function {
   padding: 3px;
 }
 .posts-expand .post-meta .post-category-list-link {
-  color: #999abc;
+  color: #bbb;
 }
 .posts-expand .post-meta .post-description {
   font-size: 14px;
@@ -1670,7 +1670,7 @@ pre .javascript .function {
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
-  color: #999abc;
+  color: #bbb;
   border-bottom-color: #555;
 }
 .sidebar a:hover {
@@ -1689,7 +1689,7 @@ pre .javascript .function {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #999abc;
+  color: #bbb;
   text-align: center;
 }
 .site-overview-wrap {
@@ -1752,7 +1752,7 @@ pre .javascript .function {
   margin-top: 5px;
   text-align: center;
   font-size: 14px;
-  color: #999abc;
+  color: #bbb;
 }
 .site-state {
   overflow: hidden;
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff9ff;
+  background: #9cdb44;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1906,7 +1906,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #999abc;
+  color: #bbb;
   border-bottom-color: #555;
 }
 .post-toc ol a:hover {
@@ -1943,7 +1943,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #999abc;
+  color: #bbb;
 }
 .footer img {
   border: none;
