@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="math520">
 <meta property="og:description" content="题目本题来源于微信群山西高中数学大教研求 $\sin 1^\circ\sin 2^\circ\sin3^\circ\cdots\sin89^\circ $的值. 解析先证明一个引理 引理对 $ n\in N $ 且 $ n\geqslant 2 $,有$$\sin\dfrac{\pi}{n}\sin\dfrac{2\pi}{n}\cdots \sin\dfrac{(n-1)\pi}{n}=\dfr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-12T15:43:50.000Z">
+<meta property="og:updated_time" content="2018-01-13T13:12:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正弦积">
 <meta name="twitter:description" content="题目本题来源于微信群山西高中数学大教研求 $\sin 1^\circ\sin 2^\circ\sin3^\circ\cdots\sin89^\circ $的值. 解析先证明一个引理 引理对 $ n\in N $ 且 $ n\geqslant 2 $,有$$\sin\dfrac{\pi}{n}\sin\dfrac{2\pi}{n}\cdots \sin\dfrac{(n-1)\pi}{n}=\dfr">
@@ -430,6 +430,7 @@
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>先证明一个引理</p>
 <h2 id="引理"><a href="#引理" class="headerlink" title="引理"></a>引理</h2><p>对 $ n\in N $ 且 $ n\geqslant 2 $,有<br>$$\sin\dfrac{\pi}{n}\sin\dfrac{2\pi}{n}\cdots \sin\dfrac{(n-1)\pi}{n}=\dfrac{n}{2^{n-1}} $$</p>
 <h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>记 $\omega=\cos \dfrac{2\pi}{n}+\mathrm{i}\sin\dfrac{2\pi}{n},(n=2,3,4\cdots) $,设<br>$$ f(z)=z^n-1=(z-1)(z-\omega)(z-\omega^2)\cdots(z-\omega^{n-1}) \qquad \quad (1)$$<br>两边求导并令 $z=1$ 得$$ f’(1) = n = (1-\omega) (1-\omega^2) \cdots (1-\omega^ {n-1} )$$<br>当 $k=1,2,\cdots,n-1 $ 时,<br>$$|1-\omega^{k}|= \sqrt{\left(1-\cos\dfrac{2k\pi}{n}\right)^2+\left(\sin\dfrac{2k\pi}{n}\right)^2}=\sqrt{2-2\cos\dfrac{2k\pi}{n}}=2\sin\dfrac{k\pi}{n}$$<br>由 $(1)$ 及上式可得<br>$$2^{n-1}\sin\dfrac{\pi}{n}\sin\dfrac{2\pi}{n}\cdots \sin\dfrac{(n-1)\pi}{n}=n $$<br>故<br>$$\sin\dfrac{\pi}{n}\sin\dfrac{2\pi}{n}\cdots \sin\dfrac{(n-1)\pi}{n}=\dfrac{n}{2^{n-1}}.\qquad  \square$$<br>在引理中令 $n=180$ 则<br>$$ \begin{aligned}<br>   &amp;\sin\dfrac{\pi}{180}\sin\dfrac{2\pi}{180}\cdots\sin\dfrac{89\pi}{180}\sin\dfrac{90\pi}{180}\dfrac{91\pi}{180}\cdots\sin\dfrac{179\pi}{180}\\<br>   =&amp;\left(\sin\dfrac{\pi}{180}\sin\dfrac{2\pi}{180}\cdots\sin\dfrac{89\pi}{180}\right)^2=\dfrac{180}{2^{179}}=\dfrac{90}{2^{178}}<br>      \end{aligned}<br>$$<br>所以<br>$$\sin 1^\circ\sin 2^\circ\sin3^\circ\cdots\sin89^\circ=\sqrt{\dfrac{90}{2^{178}}}= \dfrac{3\sqrt{10}}{2^{89}}.$$</p>
+<h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><p> 本题也可以采用三倍角公式 $$4\sin\alpha\sin(60^\circ-\alpha)\sin(60^\circ+\alpha)=\sin3\alpha $$ 来求解.</p>
 
       
     </div>
@@ -613,7 +614,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x9898;&#x76EE;" class="headerlink" title="&#x9898;&#x76EE;"></a>&#x9898;&#x76EE;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x89E3;&#x6790;" class="headerlink" title="&#x89E3;&#x6790;"></a>&#x89E3;&#x6790;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引理"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#&#x5F15;&#x7406;" class="headerlink" title="&#x5F15;&#x7406;"></a>&#x5F15;&#x7406;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#&#x8BC1;&#x660E;" class="headerlink" title="&#x8BC1;&#x660E;"></a>&#x8BC1;&#x660E;</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x9898;&#x76EE;" class="headerlink" title="&#x9898;&#x76EE;"></a>&#x9898;&#x76EE;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x89E3;&#x6790;" class="headerlink" title="&#x89E3;&#x6790;"></a>&#x89E3;&#x6790;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引理"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#&#x5F15;&#x7406;" class="headerlink" title="&#x5F15;&#x7406;"></a>&#x5F15;&#x7406;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#&#x8BC1;&#x660E;" class="headerlink" title="&#x8BC1;&#x660E;"></a>&#x8BC1;&#x660E;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注解"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x6CE8;&#x89E3;" class="headerlink" title="&#x6CE8;&#x89E3;"></a>&#x6CE8;&#x89E3;</span></a></li></ol></div>
             
 
           </div>
