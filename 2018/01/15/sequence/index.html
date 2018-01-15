@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一(求差">
+<meta name="description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一:求差">
 <meta name="keywords" content="数列,递推公式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="条条大道通罗马">
 <meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/2018/01/15/sequence/index.html">
 <meta property="og:site_name" content="math520">
-<meta property="og:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一(求差">
+<meta property="og:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一:求差">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-15T15:54:53.000Z">
+<meta property="og:updated_time" content="2018-01-15T16:01:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="条条大道通罗马">
-<meta name="twitter:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一(求差">
+<meta name="twitter:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式. 解法一:求差">
 
 
 
@@ -427,7 +427,8 @@
 
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且<br>$$ \begin{split}<br>        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)<br>    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式.</p>
-<h1 id="解法一-求差相消法"><a href="#解法一-求差相消法" class="headerlink" title="解法一(求差相消法)"></a>解法一(求差相消法)</h1><p>   由题意 $$<br>    \begin{split}<br>        \left( n+1 \right)S_n &amp; =\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right) \qquad (1) \\<br>        \left( n+2 \right)S_{n+1} &amp; =\left( n+4 \right)S_{n}+2\left( n\geqslant1 \right) \quad\qquad (2)<br>    \end{split} $$<br>     $ \left( 1 \right)-\left( 2 \right) $ 整理得:<br>   $$ \begin{split}<br>        \left( n+2 \right)S_{n+1}-\left( n+2 \right)S_n=\left( n+3 \right)S_n-\left( n+3 \right)S_{n-1}\left( n\geqslant2 \right)<br>    \end{split} $$<br>    所以 $$<br>\begin{split}<br>    \left( n+2 \right)a_{n+1}=\left( n+3 \right)a_n\left( n\geqslant2 \right)<br>\end{split} $$ 由 $ \left( 1 \right) $ 及 $ a_1=1 $ 可得 $ S_2=\dfrac{7}{3},a_2=\dfrac{4}{3} $ ,所以 $$ 3a_2=4a_1 $$ 也满足上式.所以 $ n\geqslant1 $ 时<br>   $$ \dfrac{a_{n+1}}{n+3}=\dfrac{a_n}{n+2} $$ 所以 $ \left\{ \dfrac{a_n}{n+2} \right\} $ 为常数列,所以 $ \dfrac{a_n}{n+2}=\dfrac{a_1}{1+2}=\dfrac 13 $ ,所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+<h1 id="解法一-求差相消法"><a href="#解法一-求差相消法" class="headerlink" title="解法一:求差相消法"></a>解法一:求差相消法</h1><p>   由题意 $$<br>    \begin{split}<br>        \left( n+1 \right)S_n &amp; =\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right) \qquad (1) \\<br>        \left( n+2 \right)S_{n+1} &amp; =\left( n+4 \right)S_{n}+2\left( n\geqslant1 \right) \quad\qquad (2)<br>    \end{split} $$<br>     $ \left( 1 \right)-\left( 2 \right) $ 整理得:<br>   $$ \begin{split}<br>        \left( n+2 \right)S_{n+1}-\left( n+2 \right)S_n=\left( n+3 \right)S_n-\left( n+3 \right)S_{n-1}\left( n\geqslant2 \right)<br>    \end{split} $$<br>    所以 $$<br>\begin{split}<br>    \left( n+2 \right)a_{n+1}=\left( n+3 \right)a_n\left( n\geqslant2 \right)<br>\end{split} $$ 由 $ \left( 1 \right) $ 及 $ a_1=1 $ 可得 $ S_2=\dfrac{7}{3},a_2=\dfrac{4}{3} $ ,所以 $$ 3a_2=4a_1 $$ 也满足上式.所以 $ n\geqslant1 $ 时<br>   $$ \dfrac{a_{n+1}}{n+3}=\dfrac{a_n}{n+2} $$ 所以 $ \left\{ \dfrac{a_n}{n+2} \right\} $ 为常数列,所以 $ \dfrac{a_n}{n+2}=\dfrac{a_1}{1+2}=\dfrac 13 $ ,所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+<h1 id="解法二-构造数列法"><a href="#解法二-构造数列法" class="headerlink" title="解法二:构造数列法"></a>解法二:构造数列法</h1><p>   当 $ n \geqslant 2 $ 时 $$ \begin{split}<br>        &amp; \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\\<br>        \Longleftrightarrow &amp; \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+\left( n+3 \right)-\left( n+1 \right)\\<br>        \Longleftrightarrow &amp; \left( n+1 \right)\left( S_n+1 \right)=\left( n+3 \right)\left( S_{n-1}+1 \right)\\<br>        \Longleftrightarrow &amp; \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)} =\dfrac{S_{n-1}+1 }{\left( n+1 \right)\left( n+2 \right)}  \end{split} $$ 所以数列 $ \left\{ \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)} \right\} $ 为常数列, 所以 $$ \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)}=\dfrac{a_1+1}{12}=\dfrac{1}{6}<br>   $$  所以  $$   S_n=\dfrac{1}{6}\left( n+2 \right)\left( n+3 \right)-1.$$  所以 $ n\geqslant2 $ 时, $ a_n=S_n-S_{n-1}=\dfrac{n+2}{3} $ ,对 $ n=1 $ 也成立.<br>   所以 $ a_n=\dfrac{n+2}{3} $ .</p>
 
       
     </div>
@@ -607,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x9898;&#x76EE;" class="headerlink" title="&#x9898;&#x76EE;"></a>&#x9898;&#x76EE;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法一-求差相消法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x89E3;&#x6CD5;&#x4E00;-&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;" class="headerlink" title="&#x89E3;&#x6CD5;&#x4E00;(&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;)"></a>&#x89E3;&#x6CD5;&#x4E00;(&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x9898;&#x76EE;" class="headerlink" title="&#x9898;&#x76EE;"></a>&#x9898;&#x76EE;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法一-求差相消法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x89E3;&#x6CD5;&#x4E00;-&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;" class="headerlink" title="&#x89E3;&#x6CD5;&#x4E00;:&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;"></a>&#x89E3;&#x6CD5;&#x4E00;:&#x6C42;&#x5DEE;&#x76F8;&#x6D88;&#x6CD5;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法二-构造数列法"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x89E3;&#x6CD5;&#x4E8C;-&#x6784;&#x9020;&#x6570;&#x5217;&#x6CD5;" class="headerlink" title="&#x89E3;&#x6CD5;&#x4E8C;:&#x6784;&#x9020;&#x6570;&#x5217;&#x6CD5;"></a>&#x89E3;&#x6CD5;&#x4E8C;:&#x6784;&#x9020;&#x6570;&#x5217;&#x6CD5;</span></a></li></ol></div>
             
 
           </div>
