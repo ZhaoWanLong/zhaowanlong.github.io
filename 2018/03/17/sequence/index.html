@@ -88,7 +88,7 @@
 <meta property="og:description" content="题目已知定义在 $\mathbb{R} $ 上的奇函数 $f\left(x\right) $的图象关于直线 $x=1 $ 对称，在 $\left( 0,1 \right] $ 上， $f\left( x \right)=9^x-3 $.若数列 $\left\{a_n\right\} $ 满足 $a_n=f\left[ \log_2\left( 64+n \right) \right] $,对 $n">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/image/2018031701.png">
-<meta property="og:updated_time" content="2018-03-17T13:08:39.000Z">
+<meta property="og:updated_time" content="2018-03-17T13:44:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数列的正负项">
 <meta name="twitter:description" content="题目已知定义在 $\mathbb{R} $ 上的奇函数 $f\left(x\right) $的图象关于直线 $x=1 $ 对称，在 $\left( 0,1 \right] $ 上， $f\left( x \right)=9^x-3 $.若数列 $\left\{a_n\right\} $ 满足 $a_n=f\left[ \log_2\left( 64+n \right) \right] $,对 $n">
@@ -428,7 +428,7 @@
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知定义在 $\mathbb{R} $ 上的奇函数 $f\left(x\right) $的图象关于直线 $x=1 $ 对称，在 $\left( 0,1 \right] $ 上， $f\left( x \right)=9^x-3 $.若数列 $\left\{a_n\right\} $ 满足 $a_n=f\left[ \log_2\left( 64+n \right) \right] $,对 $n\in \mathbf{N}^* $ 且 $n  &lt;   100 $,当 $a_1+a_2+\cdots+a_n $ 最大时， $n=\underline{\hspace{2cm}} $.</p>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知定义在 $\mathbb{R} $ 上的奇函数 $f\left(x\right) $的图象关于直线 $x=1 $ 对称，在 $\left( 0,1 \right] $ 上， $f\left( x \right)=9^x-3 $.若数列 $\left\{a_n\right\} $ 满足 $a_n=f\left[ \log_2\left( 64+n \right) \right] $,对 $n\in \mathbf{N}^* $ 且 $n  &lt;   100 $,当 $a_1+a_2+\cdots+a_n $ 最大时， $n=\underline{\hspace{2cm}} $.<br><a id="more"></a></p>
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>研究 $f\left( x \right) $ 的符号来确定 $a_n$ 的符号从而确定其前 $n $ 项和的最大值.<br>由于 $f\left( x \right) $ 为奇函数且 $f\left(x\right) $ 关于 $x=1 $ 对称,所以 $f\left( x \right) $ 周期为 $4 $,根据题意易画出 $f\left( x \right) $ 图象如下图<br><img src="/image/2018031701.png" alt="2018031701"></p>
 <p>当 $1\leqslant n &lt;  100 $ 时，可得 $$65\leqslant 64+n &lt;  164 $$ 注意到 $65&gt;2^6,2^{\frac{15}{2}}=128\sqrt{2}&gt;164 $, 所以 $$2^6 &lt;  64+n &lt;  2^{\frac{15}{2}} $$ 所以 $$6 &lt;  \log_2\left( 64+n \right) &lt;  \dfrac{15}{2} $$ 由图象当 $6 &lt;  x &lt;  \dfrac{15}{2} $时, $$f\left( x \right) &gt;0\Longleftrightarrow 6  &lt;   x  &lt;   \dfrac{13}{2} $$ 所以要使 $a_n&gt;0 $,只需 $$6  &lt;  \log_2\left( 64+n \right) &lt;  6.5=\log_22^{\frac{13}{2}} $$ 所以 $$2^6 &lt;  64+n &lt;  2^{\frac{13}{2}}=64\sqrt{2}\approx 90.5 $$ 解得 $$0 &lt;  n &lt;  26.5 $$ 所以当 $1\leqslant n \leqslant 26 $时， $a_n&gt;0 $；当 $27\leqslant a_n  &lt;  100 $时, $a_n &lt;  0 $.<br>    所以当 $a_1+a_2+\cdots+a_n $最大时， $n=26. $</p>
 
