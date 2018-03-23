@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数列,递推公式," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式.">
+<meta name="keywords" content="数列,递推公式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="条条大道通罗马">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20180115/sequence/index.html">
+<meta property="og:site_name" content="math520">
+<meta property="og:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-18T15:33:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="条条大道通罗马">
+<meta name="twitter:description" content="题目已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且$$ \begin{split}        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20180115/sequence/"/>
+
+
+
+
+
+  <title>条条大道通罗马 | math520</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">math520</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20180115/sequence/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="math520">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">条条大道通罗马</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-15T23:43:35+08:00">
+                2018-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数列/" itemprop="url" rel="index">
+                    <span itemprop="name">数列</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数列/递推公式/" itemprop="url" rel="index">
+                    <span itemprop="name">递推公式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/20180115/sequence/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="20180115/sequence/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知数列 $ \{a_n\} $ 的前 $ n $ 项和为 $ S_n $ , $ a_1=1 $ 且<br>$$ \begin{split}<br>        \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right)<br>    \end{split} $$ 求数列 $ \{a_n\} $ 的通项公式.</p>
+<a id="more"></a>
+<h1 id="解法一-求差相消法"><a href="#解法一-求差相消法" class="headerlink" title="解法一:求差相消法"></a>解法一:求差相消法</h1><p>   由题意 $$<br>    \begin{split}<br>        \left( n+1 \right)S_n &amp; =\left( n+3 \right)S_{n-1}+2\left( n\geqslant2 \right) \qquad (1) \\<br>        \left( n+2 \right)S_{n+1} &amp; =\left( n+4 \right)S_{n}+2\left( n\geqslant1 \right) \quad\qquad (2)<br>    \end{split} $$<br>     $ \left( 1 \right)-\left( 2 \right) $ 整理得:<br>   $$ \begin{split}<br>        \left( n+2 \right)S_{n+1}-\left( n+2 \right)S_n=\left( n+3 \right)S_n-\left( n+3 \right)S_{n-1}\left( n\geqslant2 \right)<br>    \end{split} $$<br>    所以 $$<br>\begin{split}<br>    \left( n+2 \right)a_{n+1}=\left( n+3 \right)a_n\left( n\geqslant2 \right)<br>\end{split} $$ 由 $ \left( 1 \right) $ 及 $ a_1=1 $ 可得 $ S_2=\dfrac{7}{3},a_2=\dfrac{4}{3} $ ,所以 $$ 3a_2=4a_1 $$ 也满足上式.所以 $ n\geqslant1 $ 时<br>   $$ \dfrac{a_{n+1}}{n+3}=\dfrac{a_n}{n+2} $$ 所以 $ \left\{ \dfrac{a_n}{n+2} \right\} $ 为常数列,所以 $ \dfrac{a_n}{n+2}=\dfrac{a_1}{1+2}=\dfrac 13 $ ,所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+<h1 id="解法二-构造数列法"><a href="#解法二-构造数列法" class="headerlink" title="解法二:构造数列法"></a>解法二:构造数列法</h1><p>   当 $ n \geqslant 2 $ 时 $$ \begin{split}<br>        &amp; \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\\<br>        \Longleftrightarrow &amp; \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+\left( n+3 \right)-\left( n+1 \right)\\<br>        \Longleftrightarrow &amp; \left( n+1 \right)\left( S_n+1 \right)=\left( n+3 \right)\left( S_{n-1}+1 \right)\\<br>        \Longleftrightarrow &amp; \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)} =\dfrac{S_{n-1}+1 }{\left( n+1 \right)\left( n+2 \right)}  \end{split} $$ 所以数列 $ \left\{ \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)} \right\} $ 为常数列, 所以 $$ \dfrac{S_n+1 }{\left( n+2 \right)\left( n+3 \right)}=\dfrac{a_1+1}{12}=\dfrac{1}{6}<br>   $$  所以  $$   S_n=\dfrac{1}{6}\left( n+2 \right)\left( n+3 \right)-1.$$  所以 $ n\geqslant2 $ 时, $ a_n=S_n-S_{n-1}=\dfrac{n+2}{3} $ ,对 $ n=1 $ 也成立.<br>   所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+<h1 id="解法三-累加法"><a href="#解法三-累加法" class="headerlink" title="解法三:累加法"></a>解法三:累加法</h1><p>当 $  n\geqslant2 $ 时,两边同除以 $ \left( n+1 \right)\left( n+2 \right)\left( n+3 \right) $ ,<br>   $$ \begin{split}<br>        &amp;\left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\\<br>        \Longleftrightarrow&amp; \dfrac{S_n }{\left( n+2 \right)\left( n+3 \right)} -\dfrac{S_{n-1} }{\left( n+1 \right)\left( n+2 \right)}=\dfrac{2}{\left( n+1 \right)\left( n+2 \right)\left( n+3 \right)}=\dfrac{1}{\left( n+1 \right)\left( n+2 \right)}-\dfrac{1}{\left( n+2 \right)\left( n+3 \right)}<br>    \end{split} $$ 令 $ b_n=\dfrac{S_n }{\left( n+2 \right)\left( n+3 \right)} $ ,则 $ b_1=\dfrac{a_1}{12}=\dfrac{1}{12} $ ,且 $ b_n-b_{n-1}=\dfrac{1}{\left( n+1 \right)\left( n+2 \right)}-\dfrac{1}{\left( n+2 \right)\left( n+3 \right)}\left( n\geqslant2 \right) $ ,故 $$ \begin{split}<br>        b_n=&amp;b_1+\left( b_2-b_1 \right)+\left( b_3-b_2 \right)+\cdots+\left( b_n-b_{n-1} \right)\\<br>        =&amp;\dfrac{1}{12}+\left( \dfrac{1}{3\cdot4}-\dfrac{1}{4\cdot5} \right)+\left( \dfrac{1}{4\cdot5}-\dfrac{1}{5\cdot6} \right)+\cdots+\left( \dfrac{1}{\left( n+1 \right)\left( n+2 \right)}-\dfrac{1}{\left( n+2 \right)\left( n+3 \right)} \right)\\<br>        =&amp;\dfrac{1}{6}-\dfrac{1}{\left( n+2 \right)\cdot\left( n+3 \right)}<br>    \end{split} $$ 所以 $$  S_n=\left( n+2 \right)\left( n+3 \right)b_n=\dfrac{1}{6}\left( n+2 \right)\left( n+3 \right)-1.<br>    $$ 所以 $ n\geqslant2 $ 时, $ a_n=S_n-S_{n-1}=\dfrac{n+2}{3} $ ,对 $ n=1 $ 也成立.<br>所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+<h1 id="解法四-累乘法"><a href="#解法四-累乘法" class="headerlink" title="解法四:累乘法"></a>解法四:累乘法</h1><p>当 $  n\geqslant2 $ 时<br>    $$ \begin{split}<br>        &amp;\left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+2\\<br>        \Longleftrightarrow&amp; \left( n+1 \right)S_n=\left( n+3 \right)S_{n-1}+\left( n+3 \right)-\left( n+1 \right)\\<br>        \Longleftrightarrow&amp; \left( n+1 \right)\left( S_n+1 \right)=\left( n+3 \right)\left( S_{n-1}+1 \right)\\<br>        \Longleftrightarrow&amp; \dfrac{S_n+1 }{S_{n-1}+1 } =\dfrac{ n+3 }{ n+1 }<br>    \end{split} $$ 令 $ b_n=S_n+1 $ ,则 $ b_1=a_1+1=2 $ ,且 $ \dfrac{b_n}{b_{n-1}}=\dfrac{n+3}{n+1}\left( n\geqslant2 \right) $ ,<br>    所以 $$ \begin{split}<br>        b_n=&amp;b_1\times\dfrac{b_2}{b_1}\times\dfrac{b_3}{b_2}\times\dfrac{b_4}{b_3}\times\cdots\times\dfrac{b_n}{b_{n-1}}\\<br>        =&amp;2\times \dfrac{5}{3}\times\dfrac{6}{4}\times\dfrac{7}{5} \times\cdots\times \dfrac{n+3}{n+1}\\<br>        =&amp;2\times\dfrac{\frac{\left( n+3 \right)!}{4!}}{\frac{\left( n+1 \right)!}{2}}=\dfrac{\left( n+2 \right)\left( n+3 \right)}{6}<br>    \end{split} $$ 所以 $$ \begin{split}<br>        S_n=b_n-1=\dfrac{1}{6}\left( n+2 \right)\left( n+3 \right)-1.<br>    \end{split} $$ 所以 $ n\geqslant2 $ 时, $ a_n=S_n-S_{n-1}=\dfrac{n+2}{3} $ ,对 $ n=1 $ 也成立.<br>所以 $ a_n=\dfrac{n+2}{3} $ .</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数列/" rel="tag"><i class="fa fa-tag"></i> 数列</a>
+          
+            <a href="/tags/递推公式/" rel="tag"><i class="fa fa-tag"></i> 递推公式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20180112/jxjh1/" rel="next" title="定义+射影定理求离心率">
+                <i class="fa fa-chevron-left"></i> 定义+射影定理求离心率
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20180118/function/" rel="prev" title="零点问题">
+                零点问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">48</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法一-求差相消法"><span class="nav-number">2.</span> <span class="nav-text">解法一:求差相消法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法二-构造数列法"><span class="nav-number">3.</span> <span class="nav-text">解法二:构造数列法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法三-累加法"><span class="nav-number">4.</span> <span class="nav-text">解法三:累加法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法四-累乘法"><span class="nav-number">5.</span> <span class="nav-text">解法四:累乘法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 99171, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 99171, xid: "20180115/sequence/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/99171/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
