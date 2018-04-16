@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目设双曲线 $ C: \dfrac{x^2}{a^2}-{y^2}=1~(a &amp;gt; 0) $ 与直线 $ l:x+y=1 $ 相交于两个不同的点 $ A, B. $   求双曲线 $ C $ 的离心率 $ e $ 的取值范围; 设直线 $ l $ 与 $ y $ 轴的交点为 $ P, $ 且 $ \overrightarrow{PA}=\dfrac{5}{12}\overrightarrow">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-16T10:23:25.000Z">
+<meta property="og:updated_time" content="2018-04-16T10:52:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="共线比">
 <meta name="twitter:description" content="题目设双曲线 $ C: \dfrac{x^2}{a^2}-{y^2}=1~(a &amp;gt; 0) $ 与直线 $ l:x+y=1 $ 相交于两个不同的点 $ A, B. $   求双曲线 $ C $ 的离心率 $ e $ 的取值范围; 设直线 $ l $ 与 $ y $ 轴的交点为 $ P, $ 且 $ \overrightarrow{PA}=\dfrac{5}{12}\overrightarrow">
@@ -425,6 +425,13 @@
 <li>由 $ C $ 与 $ l $ 相交于两个不同的点，故知方程组 $$ \left\{\begin{array}{l} \dfrac{x^2}{a^2}-y^2=1,\\\ x+y=1. \end{array} \right. $$ 有两个不同的实数解.消去 $ y $ 并整理得 $$ \left( 1-a^2 \right)x^2+2a^2x-2a^2=0 \qquad (1) $$ 所以 $$ \left\{\begin{array}{l} 1-a^2\neq 0 \\\ \Delta =4a^4+8a^2\left( 1-a^2 \right)&gt;0 \end{array} \right. $$ 解得 $ 0 &lt; a &lt; \sqrt{2} $ 且 $ a\neq 1 $ . 双曲线的离心率 $$ e=\dfrac{\sqrt{1+a^2}}{a}=\sqrt{\dfrac{1}{a^2}+1} $$ 因为 $ 0 &lt; a &lt; \sqrt{2} $ 且 $ a\neq 1 $ ,所以 $ e&gt;\dfrac{\sqrt{6}}{2} $ 且 $ e\neq \sqrt{2} $ .               </li>
 <li>设 $ A\left( x_1,y_1 \right),B\left( x_2,y_2 \right) $ , $ P\left( 0,1 \right) $ ,由 $ \overrightarrow{PA}=\dfrac{5}{12}\overrightarrow{PB} $ 得 $$ \left( x_1,y_1-1 \right)=\dfrac{5}{12}\left( x_2,y_2-1 \right) $$ 所以 $$ x_1=\dfrac{5}{12}x_2 $$ 由于 $ x_1,x_2 $ 都是方程 $ (1) $ 的根，且 $ 1-a^2\neq 0 $ ,所以 $$ \left\{\begin{array}{l} x_1+x_2=\dfrac{17}{12}x_2=-\dfrac{2a^2}{1-a^2}, \\\ x_1x_2=\dfrac{5}{12}x_2^2=-\dfrac{2a^2}{1-a^2}. \end{array} \right. $$ 两式消去 $ x_2 $ 得 $$ -\dfrac{2a^2}{1-a^2}=\dfrac{289}{60} $$ 由 $ a&gt;0 $ ,所以 $ a=\dfrac{17}{13} $ .</li>
 </ol>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><ol>
+<li>对于第一问,研究直线和二次曲线的位置关系时，要注意二次项系数可能等于零，此时，对双曲线因为直线和渐近线平行，对抛物线因为直线和对称轴平行.</li>
+<li>对于第二问，要有方程组思想，$x_1,x_2,a$ 三个未知数，根据题设列出三个方程，求解得到 $a$ 的值.</li>
+<li>第二问也可以利用  $$\dfrac{x_1}{x_2}+\dfrac{x_2}{x_1}=\dfrac{12}{5}+\dfrac{5}{12} $$ 整理成 $$\dfrac{(x_1+x_2)^2}{x_1x_2}-2=\dfrac{12}{5}+\dfrac{5}{12} $$ 再利用根与系数关系求解.</li>
+<li>第二问可以利用直线参数方程中 $t$ 的几何意义来求解,由 $P(0,1),$直线 $l$ 倾斜角 $\alpha=\dfrac{\pi}{4}$ 得 $$\left\{ \begin{array}{l} x=\dfrac{\sqrt{2}}{2}t,\\\ y=1+\dfrac{\sqrt{2}}{2}, \end{array}\right. $$ 代人双曲线的普通方程得到交点的参数 $t$ 的方程,然后用参数的几何意义求解.</li>
+<li>一般来说，当研究同一条直线上的线段长度的比例关系时，常常利用直线的参数方程.</li>
+</ol>
 
       
     </div>
@@ -602,7 +609,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
