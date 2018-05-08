@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/image/2018050702.png">
 <meta property="og:image" content="https://github.com/image/2018050701.png">
-<meta property="og:updated_time" content="2018-05-08T11:14:00.000Z">
+<meta property="og:updated_time" content="2018-05-08T11:15:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面积的最大值">
 <meta name="twitter:description" content="题目山西省晋中市 $2018$ 年 $5$ 月高考适应性调研考试理科第 $16$ 题 在 $ \triangle ABC $ 中,角 $ A,B,C $ 所对的边分别为 $ a,b,c $ ,若 $ 4a^2+b^2+c^2=8 $ ,则 $ \triangle ABC $ 面积的最大值为 $ \underline{\hspace{2cm}} $ .">
@@ -423,7 +423,7 @@
 <h1 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h1><p>由余弦定理及题式得 $$ 4\left( b^2+c^2-2bc\cos A \right)+b^2+c^2=8 $$ 整理可得 $$ 8+8bc\cos A=5\left( b^2+c^2 \right)\geqslant 10bc $$ 所以 $$ 4+4bc\cos A\geqslant 5bc $$ 当且仅当 $ b=c $ 等号成立.上式两边同时乘以 $ \sin A $ 可得 $$ 5bc\sin A\leqslant 4\sin A+4bc\sin A\cos A $$ 注意到 $ \triangle ABC $ 的面积 $ S=\dfrac{1}{2}bc\sin A $ ,所以 $$ 10S\leqslant 4\sin A+8S\cos A=4\sqrt{1+4S^2}\sin\left( A+\varphi \right)\leqslant 4\sqrt{1+4S^2} $$ 即 $ 5S\leqslant2\sqrt{1+4S^2} $ ,解得 $$ S\leqslant \dfrac{2}{3}. $$ 另一方面，易得当 $ a^2=\dfrac{8}{9},b^2=c^2=\dfrac{20}{9} $ 时， $ \triangle ABC $ 的面积为 $ \dfrac{2}{3} $ .<br>所以 $ \triangle ABC $ 面积的最大值为 $ \dfrac{2}{3} $ .</p>
 <h1 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h1><p>如图建立坐标系，<br><img src="/image/2018050702.png" alt="2018050702"></p>
 <p>设 $A(x,h),B(-\dfrac{a}{2},0),C(\dfrac{a}{2},0)$,<br> 由题意有 $$ \begin{aligned}<br> 8&amp;=4a^2+b^2+c^2\\\ &amp;=4a^2+\left( x-\dfrac{a}{2} \right)^2+h^2+\left( x+\dfrac{a}{2} \right)^2+h^2\\\  &amp;= \dfrac{9 a^2}{2}+2 h^2+2 x^2\\\ &amp;\geqslant \dfrac{9 a^2}{2}+2 h^2\\\ &amp;\geqslant 2\sqrt{\dfrac{9 a^2}{2}\times 2 h^2}=6ah=12S \end{aligned}$$ 所以 $S\leqslant \dfrac{2}{3}$.  </p>
-<h1 id="解法三"><a href="#解法三" class="headerlink" title="解法三"></a>解法三</h1><p>先来证明一个引理，</p>
+<h1 id="解法三"><a href="#解法三" class="headerlink" title="解法三"></a>解法三</h1><p>先来证明一个引理.</p>
 <h2 id="引理"><a href="#引理" class="headerlink" title="引理"></a>引理</h2><p><strong>若</strong> $ \lambda&gt;-\dfrac{1}{2} $ , $ \triangle ABC $ <strong>的面积为</strong> $ S $ , <strong>则有</strong> $$ b^2+c^2+\lambda a^2\geqslant 4S\sqrt{2\lambda+1} $$ <strong>当且仅当</strong> $ 2b^2=2c^2=\left( \lambda+1 \right)a^2 $ <strong>时，等式成立.</strong>  </p>
 <h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p> 设 $ BC $ 边上的中线 $ AD=m $ ,<br> <img src="/image/2018050701.png" alt="2018050701"></p>
 <p> 由三角形的中线长公式可得 $$ b^2+c^2=2m^2+\dfrac{a^2}{2} $$ 所以 $$ b^2+c^2+\lambda a^2=2m^2+\dfrac{\left( 2\lambda+1 \right)a^2}{2}\geqslant2\sqrt{2\lambda+1}ma $$ 因为中线长大于等于对应边上的高，所以 $$ ma\geqslant ah=2S $$ 所以 $$ b^2+c^2+\lambda a^2\geqslant 4S\sqrt{2\lambda+1} $$ 当且仅当 $ 4m^2=\left( 2\lambda+1 \right)a^2 $ 且 $ AD\perp BC $ 等式成立,计算可得<br> 当且仅当 $ 2b^2=2c^2=\left( \lambda+1 \right)a^2 $ 时，等式成立.<br> 利用该引理，易得$ \triangle ABC $ 面积的最大值为 $ \dfrac{2}{3} $ .</p>
