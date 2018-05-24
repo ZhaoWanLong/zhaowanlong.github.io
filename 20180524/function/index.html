@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目若直线 $y=kx+2$ 与函数 $y=\mathrm{e}^x$ 交于 $A$ 、$B$ 两点，$O$ 为坐标原点，当 $\triangle OAB$ 面积取最小值时，求 $k$ 的值.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-24T15:57:58.000Z">
+<meta property="og:updated_time" content="2018-05-24T15:59:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分离变量">
 <meta name="twitter:description" content="题目若直线 $y=kx+2$ 与函数 $y=\mathrm{e}^x$ 交于 $A$ 、$B$ 两点，$O$ 为坐标原点，当 $\triangle OAB$ 面积取最小值时，求 $k$ 的值.">
@@ -415,9 +415,9 @@
       
 
       
-        <p>题目<br>若直线 $y=kx+2$ 与函数 $y=\mathrm{e}^x$ 交于 $A$ 、$B$ 两点，$O$ 为坐标原点，当 $\triangle OAB$ 面积取最小值时，求 $k$ 的值.</p>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>若直线 $y=kx+2$ 与函数 $y=\mathrm{e}^x$ 交于 $A$ 、$B$ 两点，$O$ 为坐标原点，当 $\triangle OAB$ 面积取最小值时，求 $k$ 的值.</p>
 <a id="more"></a>
-<p>解析<br>设 $A(x_1,y_1),B(x_2,y_2)(x_2&gt;0&gt;x_1)$,则有 $$e^{x_1}=kx_1+2,e^{x_2}=kx_2+2 $$ 消去 $k$ 得  $$\dfrac{e^{x_1}-2}{x_1}=\dfrac{e^{x_2}-2}{x_2}\qquad (1) $$ $\triangle OAB$ 的面积 $$ S=\dfrac 12 \times 2\times (x_2-x_1)=x_2-x_1$$<br>所以 $$x_2=x_1+S$$ 代入 $(1)$ 化简得 $$\dfrac{e^S-1}{S}=\dfrac{e^{x_1}-2}{x_1e^{x_1}} \qquad (2) $$ 令$f(S)=\dfrac{e^S-1}{S}(S&gt;0)$ ，则 $$ f’(S)=\frac{e^S (S-1)+1}{S^2}$$ 若$S\in (0,1),e^S(S-1)\in(-1,0)$,$f’(S)&gt;0$,若 $S\in [1,+\infty)$,显然 $f’(S)&gt;0$,所以 $f(S)$ 在 $(0,+\infty)$ 上单调递增. 所以 要使 $S$ 最小，只需 $(2)$ 式右方最小.令 $$ g(x)=\dfrac{e^{x}-2}{xe^{x}}(x&lt;0) $$ 则 $$ g’(x)=\dfrac{e^{x}-2x-2}{-xe^{x}} $$<br>由题设 $e^{x}-2x-2=0$ 在 $(-\infty,0)$ 有且仅有一根 $x_1$,且 $g(x_1)$ 在 $(-\infty,x_1)$ 单调递减，在 $(x_1,0)$ 单调递增，所以 $$g(x)_{\min}=g(x_1) $$ 当且仅当 $e^{x_1}=2x_1+2$ 取最小值,所以 $k=2$.</p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>设 $A(x_1,y_1),B(x_2,y_2)(x_2&gt;0&gt;x_1)$,则有 $$e^{x_1}=kx_1+2,e^{x_2}=kx_2+2 $$ 消去 $k$ 得  $$\dfrac{e^{x_1}-2}{x_1}=\dfrac{e^{x_2}-2}{x_2}\qquad (1) $$ $\triangle OAB$ 的面积 $$ S=\dfrac 12 \times 2\times (x_2-x_1)=x_2-x_1$$<br>所以 $$x_2=x_1+S$$ 代入 $(1)$ 化简得 $$\dfrac{e^S-1}{S}=\dfrac{e^{x_1}-2}{x_1e^{x_1}} \qquad (2) $$ 令$f(S)=\dfrac{e^S-1}{S}(S&gt;0)$ ，则 $$ f’(S)=\frac{e^S (S-1)+1}{S^2}$$ 若$S\in (0,1),e^S(S-1)\in(-1,0)$,$f’(S)&gt;0$,若 $S\in [1,+\infty)$,显然 $f’(S)&gt;0$,所以 $f(S)$ 在 $(0,+\infty)$ 上单调递增. 所以 要使 $S$ 最小，只需 $(2)$ 式右方最小.令 $$ g(x)=\dfrac{e^{x}-2}{xe^{x}}(x&lt;0) $$ 则 $$ g’(x)=\dfrac{e^{x}-2x-2}{-xe^{x}} $$<br>由题设 $e^{x}-2x-2=0$ 在 $(-\infty,0)$ 有且仅有一根 $x_1$,且 $g(x_1)$ 在 $(-\infty,x_1)$ 单调递减，在 $(x_1,0)$ 单调递增，所以 $$g(x)_{\min}=g(x_1) $$ 当且仅当 $e^{x_1}=2x_1+2$ 取最小值,所以 $k=2$.</p>
 
       
     </div>
@@ -513,8 +513,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -576,6 +585,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
