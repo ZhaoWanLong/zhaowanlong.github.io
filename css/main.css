@@ -1266,7 +1266,10 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
-.page-post-detail .post-title {
+.page-post-detail {
+  color: #42c4ba;
+}
+.post-title {
   color: #42c4ba;
 }
 .posts-expand {
@@ -1825,7 +1828,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe306;
+  background: #71e5c7;
 }
 .links-of-blogroll {
   font-size: 13px;
