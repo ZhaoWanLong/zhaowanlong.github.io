@@ -1,3 +1,4 @@
+/* $blue         = #0684bd */
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -277,7 +278,7 @@ p {
   margin: 0 0 20px 0;
 }
 a {
-  color: #0684bd;
+  color: #42c4ba;
   text-decoration: none;
   outline: none;
   border-bottom: 1px solid #999;
@@ -921,7 +922,7 @@ pre .javascript .function {
 }
 .post-body .tabs ul.nav-tabs li.tab.active a {
   cursor: default;
-  color: #0684bd;
+  color: #42c4ba;
 }
 .post-body .tabs .tab-content {
   background-color: #fff;
@@ -940,7 +941,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #0684bd;
+  color: #42c4ba;
   background: transparent;
   border: 2px solid #222;
   text-decoration: none;
@@ -1577,7 +1578,7 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #0684bd;
+  color: #42c4ba;
   border-bottom: none;
 }
 .post-nav-item a:hover {
@@ -1822,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e0ffff;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
