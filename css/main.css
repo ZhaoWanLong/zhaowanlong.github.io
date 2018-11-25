@@ -1658,7 +1658,7 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
-.page-post-detail .post-title {
+.post-title {
   color: #42c4ba;
 }
 .sidebar {
@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff28c3;
+  background: #b6ff88;
 }
 .links-of-blogroll {
   font-size: 13px;
