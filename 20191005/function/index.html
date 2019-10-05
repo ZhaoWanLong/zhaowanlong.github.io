@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目已知 $ f(x)=x^2\mathrm{e}^x-2\ln x-ax-1$,若 $f(x)\geqslant 0 $ 恒成立，求实数 $a$ 的取值范围.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-05T06:18:32.349Z">
+<meta property="og:updated_time" content="2019-10-05T06:23:20.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="虚拟零点与放缩法求最值">
 <meta name="twitter:description" content="题目已知 $ f(x)=x^2\mathrm{e}^x-2\ln x-ax-1$,若 $f(x)\geqslant 0 $ 恒成立，求实数 $a$ 的取值范围.">
@@ -407,7 +407,7 @@
 <a id="more"></a>
 <h2 id="解法一-虚拟零点"><a href="#解法一-虚拟零点" class="headerlink" title="解法一(虚拟零点)"></a>解法一(虚拟零点)</h2><p>解：由 $f(x)\geqslant 0$ 得<br>$$<br>a\leqslant \dfrac{e^x x^2-2 \ln x-1}{x}<br>$$<br>记  $g(x)=\dfrac{e^x x^2-2 \ln x-1}{x}$，则<br>$$<br>g’(x)=\dfrac{x^2e^x (x+1) +2 \ln x-1}{x^2}=\dfrac{(x^2e^x-1) (x+1) + \ln (x^2e^x)}{x^2}<br>$$<br>注意到 $x^2e^x$ 在  $ (0,+\infty)$ 单调递增，且值域为 $(0,+\infty)$ ,存在唯一的正数 $x_0$,使得<br>$$<br>x_0^2e^{x_0}=1<br>$$</p>
 <ol>
-<li><p>当 $x_0\in(0,x_0)$ 时，$x^2e^x&lt;x_0e^{x_0}=1$,故<br>$$<br>x^2e^2&lt;1,\qquad \ln(x^2e^2)&lt;1<br>$$<br>所以 $g’(x)&lt;0$，$g(x)$ 单调递减.</p>
+<li><p>当 $x_0\in(0,x_0)$ 时，$x^2e^x&lt;x_0e^{x_0}=1$,故<br>$$<br>x^2e^x-1 &lt; 0,\qquad \ln(x^2e^2)&lt;0<br>$$<br>所以 $g’(x)&lt;0$，$g(x)$ 单调递减.</p>
 </li>
 <li><p>当 $x\in(x_0,+\infty)$ 时，$x^2e^x&gt;1$,同理 $g’(x)&gt;0$,$g(x)$ 单调递增.  </p>
 </li>
