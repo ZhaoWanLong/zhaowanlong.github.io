@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目(晋中市2020年1月高三适应性考试理科21题)     已知函数 $f(x)=2 x+(1-2 a) \ln x+\dfrac{a}{x}$.  讨论 $f(x)$ 的单调性; 如果方程 $f(x)=m$ 有两个不相等的解 $x_{1}, x_{2},$ 且 $x_{1}  &amp;lt;  x_{2},$ 证明: $f^{\prime}\left(\dfrac{x_{1}+x_{2}}{2}\r">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-08-27T04:21:03.808Z">
+<meta property="og:updated_time" content="2020-08-27T04:23:34.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多变量归一">
 <meta name="twitter:description" content="题目(晋中市2020年1月高三适应性考试理科21题)     已知函数 $f(x)=2 x+(1-2 a) \ln x+\dfrac{a}{x}$.  讨论 $f(x)$ 的单调性; 如果方程 $f(x)=m$ 有两个不相等的解 $x_{1}, x_{2},$ 且 $x_{1}  &amp;lt;  x_{2},$ 证明: $f^{\prime}\left(\dfrac{x_{1}+x_{2}}{2}\r">
@@ -407,7 +407,10 @@
 <p>已知函数 $f(x)=2 x+(1-2 a) \ln x+\dfrac{a}{x}$.</p>
 <ol>
 <li>讨论 $f(x)$ 的单调性;</li>
-<li>如果方程 $f(x)=m$ 有两个不相等的解 $x_{1}, x_{2},$ 且 $x_{1}  &lt;  x_{2},$ 证明: $f^{\prime}\left(\dfrac{x_{1}+x_{2}}{2}\right) &gt;  0$.<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1></li>
+<li>如果方程 $f(x)=m$ 有两个不相等的解 $x_{1}, x_{2},$ 且 $x_{1}  &lt;  x_{2},$ 证明: $f^{\prime}\left(\dfrac{x_{1}+x_{2}}{2}\right) &gt;  0$.</li>
+</ol>
+<a id="more"></a>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ol>
 <li><p>$f(x)$ 的定义域为 $(0,+\infty)$,导数为<br>$$<br>f^{\prime}(x)=2+\dfrac{1-2 a}{x}-\dfrac{a}{x^{2}}=\dfrac{2 x^{2}+(1-2 a) x-a}{x^{2}}=\dfrac{(2 x+1)(x-a)}{x^{2}}<br>$$<br>​      当 $a \leqslant 0$ 时, $f^{\prime}(x) &gt;  0, f(x)$ 的增区间为 $(0,+\infty)$;<br>​      当 $a &gt;  0$ 时, $x \in(0, a), f^{\prime}(x)  &lt;  0, x \in(a,+\infty), f^{\prime}(x) &gt;  0,$ 故 $f(x)$ 的减区间为 $(0, a),$ 增区间为 $(a,+\infty) .$</p>
 </li>
 <li><p><strong>方法一(极值点偏移)</strong><br>由(1)可得, $f(x)=m$ 有两个解，必有 $a &gt;  0,$ 且 $0  &lt;  x_{1}  &lt;  a  &lt;  x_{2}$ 注意到 $f^{\prime}(x)$ 的符号，要证明 $f^{\prime}\left(\dfrac{x_{1}+x_{2}}{2}\right) &gt;  0,$ 即证明<br>$$<br>\dfrac{x_{1}+x_{2}}{2} &gt;  a<br>$$<br>​       即证<br>$$<br>x_{2} &gt;  2 a-x_{1}=a+\left(a-x_{1}\right) &gt;  a<br>$$<br>​       因为 $f(x)$ 在 $(a,+\infty)$ 是增函数，且 $f\left(x_{1}\right)=f\left(x_{2}\right)$,需证明<br>$$<br>f\left(x_{1}\right)=f\left(x_{2}\right) &gt;  f\left(2 a-x_{1}\right)\tag{1}\label{2020012701}<br>$$<br>​      令 $g(x)=f(x)-f(2 a-x)(0  &lt;  x  &lt;  a)$,则由 $f^{\prime}(x)=2+\dfrac{1-2 a}{x}-\dfrac{a}{x^{2}}$ 得<br>$$<br>\begin{aligned}<br>g^{\prime}(x) &amp;=f^{\prime}(x)+f^{\prime}(2 a-x) \\<br>&amp;=4+(1-2 a)\left(\dfrac{1}{x}+\dfrac{1}{2 a-x}\right)-a\left(\dfrac{1}{x^{2}}+\dfrac{1}{(2 a-x)^{2}}\right) \\<br>&amp; \leqslant 4+(1-2 a) \dfrac{2 a}{x(2 a-x)}-a \cdot 2 \sqrt{\dfrac{1}{x^{2}(2 a-x)^{2}}} \\<br>&amp;=4+\dfrac{2 a-4 a^{2}}{x(2 a-x)}-\dfrac{2 a}{x(2 a-x)} \\<br>&amp;=4-\dfrac{4 a^{2}}{x(2 a-x)} \\<br>&amp; \leqslant 4-\dfrac{4 a^{2}}{\left(\dfrac{x+(2 a-x)}{2}\right)^{2}}=0<br>\end{aligned}<br>$$<br>故 $g(x)$ 在 $(0, a)$ 上是减函数, 所以 $g\left(x_{1}\right) &gt;  g(a)=0,$ 即 $f\left(x_{1}\right) &gt;  f\left(2 a-x_{1}\right),$ 所以 $\eqref{2020012701}$ 式成立， 命题得证 .​</p>
