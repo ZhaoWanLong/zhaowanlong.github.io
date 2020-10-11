@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.&amp;lt; !–more– &amp;gt;  解析由题意$$">
+<meta name="description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.">
 <meta name="keywords" content="数列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="收敛速度">
 <meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20201011/sequence/index.html">
 <meta property="og:site_name" content="iMathZhao">
-<meta property="og:description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.&amp;lt; !–more– &amp;gt;  解析由题意$$">
+<meta property="og:description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-10-11T02:25:56.374Z">
+<meta property="og:updated_time" content="2020-10-11T02:31:37.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="收敛速度">
-<meta name="twitter:description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.&amp;lt; !–more– &amp;gt;  解析由题意$$">
+<meta name="twitter:description" content="题目已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &amp;lt; q &amp;lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.">
 
 
 
@@ -403,7 +403,7 @@
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &lt; q &lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.<br>&lt; !–more– &gt; </p>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>已知数列 $  \{b_n\} $  的通项公式为 $  b_n=\dfrac{n}{2^n} $  ，是否存在正整数 $  p,q,r\left( p &lt; q &lt; r \right) $  ，使得 $  b_p,b_q,b_r $  成等差数列？若存在，求出所有满足要求的 $  p,q,r $  ；若不存在，请说明理由.<br><a id="more"></a></p>
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>由题意<br>$$    2 b_q=b_p+b_r $$<br>所以<br>$$    \dfrac{b_p}{b_q}+\dfrac{b_r}{b_q}=2 $$<br>由 $  b_n &gt;  0 $  得<br>$$    \dfrac{b_p}{b_q} &lt; 2 $$<br>当 $  n\geqslant 2 $  时<br>$$    \frac{b_{n+1}}{b_{n}}=\frac{n+1}{2^{n+1}} \times \frac{2^{n}}{n}=\frac{n+1}{2n}=\frac{n+1}{n+n} \leqslant 1  $$<br>所以 $  n\geqslant2 $  时，数列 $  \{b_n\} $  单调递减.</p>
 <ol>
 <li>若 $  p\geqslant2 $  ,则 $  b_p $  和 $  b_q $  必为相邻两项，若不然，则 $  q\geqslant p+2 $  ,此时<br>$$    b_q\leqslant b_{p+2} $$<br>从而有<br>$$    \frac{b_p}{b_q}\geqslant\frac{b_p}{b_{p+2}}=\frac{p}{2^{p}} \cdot \frac{2^{p+2}}{p+2}=\frac{4 p}{p+2}=2 \cdot \frac{p+p}{p+2} \geqslant 2 $$<br>与 $  \dfrac{b_p}{b_q} &lt; 2 $  矛盾，所以 $  b_p $  与 $  b_q $  为相邻项,故<br>$$     2 b_{p+1}=b_p+b_r $$<br>即<br>$$    \frac{2(p+1)}{2^{p+1}}=\frac{p}{2^{p}}+\frac{r}{2} $$<br>即 $  \dfrac{1}{2^p}=\dfrac{r}{2^r} $  ,故<br>$$    r=2^{r-p} $$<br>令 $  r-p=n\left( n\geqslant2 \right) $  ，则<br>$$    r=2^n,p=r-n=2^n-n,q=2^n-n+1\left( n\in \mathbb{N},n\geqslant2 \right). $$ </li>
