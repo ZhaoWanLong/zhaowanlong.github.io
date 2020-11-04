@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="函数与导数," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目  ( 2019 年 1 月晋中市高考适应性调研考试理科第 21 题 )   已知函数$f\left( x \right)=\dfrac{a}{2}\mathrm{e}^{2x}+\mathrm{e}^x-a,\left( a\in \mathbf{R} \right)$.  讨论函数 $f\left(x\right)$ 的单调性； 若函数$g\left( x \right)=x\ln x-f">
+<meta name="keywords" content="函数与导数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="又见 $x_1,x_2$">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20190121/function/index.html">
+<meta property="og:site_name" content="iMathZhao">
+<meta property="og:description" content="题目  ( 2019 年 1 月晋中市高考适应性调研考试理科第 21 题 )   已知函数$f\left( x \right)=\dfrac{a}{2}\mathrm{e}^{2x}+\mathrm{e}^x-a,\left( a\in \mathbf{R} \right)$.  讨论函数 $f\left(x\right)$ 的单调性； 若函数$g\left( x \right)=x\ln x-f">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-08-27T03:41:45.068Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="又见 $x_1,x_2$">
+<meta name="twitter:description" content="题目  ( 2019 年 1 月晋中市高考适应性调研考试理科第 21 题 )   已知函数$f\left( x \right)=\dfrac{a}{2}\mathrm{e}^{2x}+\mathrm{e}^x-a,\left( a\in \mathbf{R} \right)$.  讨论函数 $f\left(x\right)$ 的单调性； 若函数$g\left( x \right)=x\ln x-f">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20190121/function/"/>
+
+
+
+
+
+  <title>又见 $x_1,x_2$ | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iMathZhao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tongjigailv">
+          <a href="/categories/统计概率" rel="section">
+            
+            tongjigailv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20190121/function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iMathZhao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">又见 $x_1,x_2$</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T23:15:36+08:00">
+                2019-01-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/函数/" itemprop="url" rel="index">
+                    <span itemprop="name">函数</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>  <font color="#42c4ba">( 2019 年 1 月晋中市高考适应性调研考试理科第 21 题 )  </font><br> 已知函数$f\left( x \right)=\dfrac{a}{2}\mathrm{e}^{2x}+\mathrm{e}^x-a,\left( a\in \mathbf{R} \right)$.</p>
+<ol>
+<li>讨论函数 $f\left(x\right)$ 的单调性；</li>
+<li>若函数$g\left( x \right)=x\ln x-f\left( \ln x \right)$有两个不同的极值点$x_1,x_2$,证明:$x_1\cdot x_2 &gt; \mathrm{e}^2$.</li>
+</ol>
+<a id="more"></a>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ol>
+<li>$f\left( x \right)$ 的导函数为 $$f’\left( x \right)=ae^{2x}+e^x=e^x\left( ae^x+1 \right)$$ <ul>
+<li>若 $a\geqslant 0$, 则 $f’\left( x \right) &gt; 0$,所以$f\left( x \right)$在$\left( -\infty,+\infty \right)$上单调递增.   </li>
+<li>若$a &lt; 0$,令 $f’\left( x \right)=0$ 得 $x=-\ln\left( -a \right)$,<br>当$x\in\left( -\infty,-\ln\left( -a \right) \right)$时，$f’\left( x \right) &gt; 0$;<br>当$x\in\left( -\ln\left( -a \right),+\infty \right)$时，$f’\left( x \right) &lt; 0$.<br>所以$f\left( x \right)$的单调增区间为$\left( -\infty,-\ln\left( -a \right) \right)$,减区间为$\left( -\ln\left( -a \right),+\infty \right)$. </li>
+</ul>
+</li>
+<li><ul>
+<li>(方法一:齐次化换元)因为 $f’\left( \ln x \right)=a x^2+x$,所以 $g\left( x \right)$  的导函数为 $$g’\left( x \right)=\ln x+1-\dfrac{f’\left( \ln x \right)}{x}=\ln x-ax$$ 因为 $g’\left( x \right)=0$的两根为 $x_1,x_2$,所以 $$\ln x_1-ax_1=\ln x_2-ax_2=0$$ 所以 $$ \frac{\ln x_{1}}{x_{1}}=\frac{\ln x_{2}}{x_{2}} $$ 不妨设 $x_2 &gt; x_1 &gt; 0$,令 $x_2=tx_1\left( t &gt; 1 \right)$,代入上式可解得 $$ \ln x_{1}=\frac{\ln t}{t-1},\quad\ln x_{2}=\frac{t\ln t}{t-1} $$ 要证明 $x_1x_2 &gt; \mathrm{e}^2$,只需证明 $$\ln x_1+\ln x_2 &gt; 2,$$ 即证明 $$ \frac{\left( t+1 \right)\ln t}{t-1}&gt; 2 $$ 因为 $t &gt; 1$,只需证明 $$F\left( t \right)=\ln t-\dfrac{2\left( t-1 \right)}{t+1} &gt; 0,\left( t &gt; 1 \right)$$ 因为 $$ F^{\prime}(t)=\frac{(t-1)^{2}}{t(t+1)^{2}} &gt; 0 $$ 所以 $F\left( t \right)$ 在 $\left( 1,+\infty \right)$ 单调递增，所以 $$F\left( t \right) &gt; F\left( 1 \right)=0$$ 所以$x_1x_2 &gt; \mathrm{e}^2$. </li>
+<li>(方法二:对称性构造)令 $h\left( x \right)=\dfrac{\ln x}{x}$,不妨设 $x_2 &gt; x_1 &gt; 0$ 则 $$h\left( x_1\right)=h\left( x_2 \right)=a $$ 因为 $$h’\left( x \right)= \frac { 1 - \ln x } { x ^ { 2 } }$$ 所以 $x\in\left( 0,e \right),h’\left( x \right) &gt; 0,h\left( x \right)$单调递增, $x\in\left( e,+\infty \right),h’\left( x \right) &lt; 0,h\left( x \right)$单调递减.  注意到$0 &lt; x &lt; 1,h\left( x \right) &lt; 0,x &gt; 1,h\left( x \right) &gt; 0$,所以 $$1 &lt; x_1 &lt; e &lt; x_2 \qquad (1)$$ 要证明$x_1x_2 &gt; e^2$,只需证明$$x_1 &gt; \dfrac{e^2}{x_2}$$ 由$\left( 1 \right)$式可得，只需证明 $$ 0 &lt; \dfrac{e^2}{x_2} &lt; x_1 &lt; e.$$ 因为$h\left( x \right)$在$\left( 0,e \right)$上单调递增，只需证明 $$h\left( x_1 \right) &gt; h\left( \dfrac{e^2}{x_2} \right)$$ 又$h\left( x_2\right)=h\left( x_1 \right) $,只需证明 $$h\left( x_2 \right) &gt; h\left( \dfrac{e^2}{x_2} \right)$$. 令$F\left( x \right)=h\left( x \right)-h\left( \dfrac{e^2}{x} \right)\left( x &gt; e \right)$,则 $$ F ^ { \prime } ( x ) = ( \ln x - 1 ) \left( \frac { 1 } { \mathrm { e } ^ { 2 } } - \frac { 1 } { x ^ { 2 } } \right)  &gt;  0$$ 所以$F\left( x \right)$在$\left( e,+\infty \right)$单调递增,又 $x_2 &gt; e$所以 $$F\left( x_2 \right)=h\left( x_2 \right)-h\left( \dfrac{e^2}{x_2} \right) &gt; F\left( e \right)=0$$ 所以$(2)$式成立，所以$x_1\cdot x_2 &gt; e^2$.  </li>
+<li>(方法三:对数均值不等式) 因为$\ln x_1=ax_1 &gt; 0,\ln x_2=ax_2 &gt; 0$,所以 $$\ln\left( \ln x_1 \right)=\ln a+\ln x_1,\qquad \ln\left( \ln x_2 \right)=\ln a+\ln x_2$$ 两式相减化简得 $$ \dfrac{\ln x_2-\ln x_1}{\ln\left( \ln x_2 \right)-\ln\left( \ln x_1 \right)}=1 $$ 在对数均值不等式中 $ \dfrac{m-n}{\ln m-\ln n} &lt; \dfrac{m+n}{2}$中 令$m=\ln x_2,n=\ln x_1$,可得 $$1 &lt; \dfrac{\ln x_1+\ln x_2}{2} $$ 所以$x_1x_2 &gt; e^2$.</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/函数与导数/" rel="tag"><i class="fa fa-tag"></i> 函数与导数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20181123/function/" rel="next" title="增量代换与极值点偏移">
+                <i class="fa fa-chevron-left"></i> 增量代换与极值点偏移
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20190122/coordiantegeo/" rel="prev" title="极坐标法求轨迹">
+                极坐标法求轨迹 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>

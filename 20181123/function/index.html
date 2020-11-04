@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="函数与导数," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目  ( 2018 年 11 月金太阳百校联考理科第 21 题 )   已知函数 $f(x)=ae^x-x+1$ 有两个零点 $x_1,x_2$.  求 $a$ 的取值范围; 设 $x_0$ 是 $f(x)$ 的极小值点，证明: $x_1+x_2&amp;lt;2x_0$.">
+<meta name="keywords" content="函数与导数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="增量代换与极值点偏移">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20181123/function/index.html">
+<meta property="og:site_name" content="iMathZhao">
+<meta property="og:description" content="题目  ( 2018 年 11 月金太阳百校联考理科第 21 题 )   已知函数 $f(x)=ae^x-x+1$ 有两个零点 $x_1,x_2$.  求 $a$ 的取值范围; 设 $x_0$ 是 $f(x)$ 的极小值点，证明: $x_1+x_2&amp;lt;2x_0$.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-11-03T02:06:59.553Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="增量代换与极值点偏移">
+<meta name="twitter:description" content="题目  ( 2018 年 11 月金太阳百校联考理科第 21 题 )   已知函数 $f(x)=ae^x-x+1$ 有两个零点 $x_1,x_2$.  求 $a$ 的取值范围; 设 $x_0$ 是 $f(x)$ 的极小值点，证明: $x_1+x_2&amp;lt;2x_0$.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20181123/function/"/>
+
+
+
+
+
+  <title>增量代换与极值点偏移 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iMathZhao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tongjigailv">
+          <a href="/categories/统计概率" rel="section">
+            
+            tongjigailv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20181123/function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iMathZhao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">增量代换与极值点偏移</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-23T20:30:02+08:00">
+                2018-11-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/函数/" itemprop="url" rel="index">
+                    <span itemprop="name">函数</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title=" 题目 "></a><font color="#42c4ba"> 题目 </font></h1><p> <font color="#42c4ba">( 2018 年 11 月金太阳百校联考理科第 21 题 )  </font><br> 已知函数 $f(x)=ae^x-x+1$ 有两个零点 $x_1,x_2$.</p>
+<ol>
+<li>求 $a$ 的取值范围;</li>
+<li>设 $x_0$ 是 $f(x)$ 的极小值点，证明: $x_1+x_2&lt;2x_0$.</li>
+</ol>
+<a id="more"></a>
+<h1 id="解法"><a href="#解法" class="headerlink" title=" 解法 "></a><font color="#42c4ba"> 解法 </font></h1><ol>
+<li>$f(x)$的导数$$f’(x)=ae^x-1$$<ul>
+<li>当$a\leqslant0$时，$f’(x) &lt; 0$，$f(x)$是减函数，不可能有两个零点.</li>
+<li>当 $a &gt; 0$ 时，令 $f’(x)=0$ 得，$$x_0=-\ln a$$ 若 $x\in(-\infty,x_0)$,$f’(x) &lt; 0$,$f(x)$ 单调递减；若 $x\in(x_0,+\infty)$,$f’(x) &gt; 0$,$f(x)$ 单调递增. 要使$f(x)$有两个零点，必有 $$f(x_0)=ae^{x_0}-x_0+1=2-x_0 &lt; 0$$ 即 $x_0=-\ln a &gt; 2$,所以 $a\in(0,\dfrac{1}{e^2}).$此时由$\ln x\leqslant x-1$ 有 $$ 0 &lt; x_0=-\ln a \leqslant \dfrac{1}{a}-1 &lt; \dfrac{2}{a}  $$ 注意到 $x &gt; 0$ 时，$e^x &gt; \dfrac{1}{2}x^2$ , 所以 $$f\left( 0 \right)=a+1 &gt; 0,$$ $$ f\left( \dfrac{2}{a}\right)=ae^{\frac{2}{a}}-\dfrac{2}{a}+1 &gt; a\times \dfrac{1}{2}\left( \frac{2}{a} \right)^2-\dfrac{2}{a}+1=0 $$ 所以 $f\left( x \right)$ 在 $\left( 0,x_0 \right)$,$\left( x_0,\dfrac{2}{a} \right)$ 各有一个零点.<br>所以 $a$ 的取值范围是 $\left( 0,\dfrac{1}{e^2} \right)$. </li>
+</ul>
+</li>
+<li><font size="4" color="#42c4ba"> ( 解法一：增量代换 ) </font><br>因为 $f\left( x_1 \right)=f\left( x_2 \right)$,所以 $$ae^{x_1}-x_1+1=ae^{x_2}-x_2+1$$ 所以 $$\dfrac{1}{a}=\dfrac{e^{x_2}-e^{x_1}}{x_2-x_1}$$ 要证明 $x_1+x_2 &lt; 2x_0$,只需证明 $$\dfrac{x_1+x_2}{2} &lt; x_0$$ 因为 $f’\left( x \right)=ae^x-1$ 单调递增，且  $f’\left( x_0 \right)=0$,所以只需证明 $$f’\left( \dfrac{x_1+x_2}{2} \right) &lt; f’(x_0)=0$$ 即证明 $$ae^{\frac{x_1+x_2}{2}}-1 &lt; 0$$ 即证明 $$e^{\frac{x_1+x_2}{2}} &lt; \dfrac{e^{x_2}-e^{x_1}}{x_2-x_1}=\dfrac{1}{a}$$ 不妨设 $x_2 &gt; x_1$,即证明 $$x_2-x_1 &lt; \dfrac{e^{x_2}-e^{x_1}}{e^{\frac{x_1+x_2}{2}}}=\dfrac{1}{a}$$ 即证明 $$x_2-x_1 &lt; e^{\frac{x_2-x_1}{2}}-e^{-\frac{x_2-x_1}{2}}$$ 令 $t=\dfrac{x_2-x_1}{2} &gt; 0$,只需证明  $$e^t-e^{-t} &gt; 2t\left( t &gt; 0 \right),$$ 令 $g\left( t \right)=e^t-e^{-t}-2t\left( t\geqslant0 \right)$,则 $$g’\left( t \right)=e^t+e^{-t}-2\geqslant2\sqrt{e^t\cdot e^{-t}}-2=0$$ 所以 $g\left( t \right)$ 在 $\left[ 0,+\infty \right)$ 单调递增，因为 $t &gt; 0$ ,所以 $$g\left( t \right)=e^t-e^{-t}-2t &gt; g\left( 0 \right)=0$$ 即 $e^t-e^{-t} &gt; 2t$. 综上，$x_1+x_2 &lt; 2x_0$.<br><font size="4" color="#42c4ba">(解法二:极值点偏移) </font><br>由 (1) 可得 $x_1 &lt; x_0 &lt; x_2$,要证明 $x_1+x_2 &lt; 2x_0$,只需证明 $$x_1 &lt; 2x_0-x_2$$ 注意到 $x_1 &lt; 2x_0-x_2 &lt; x_0$,$f\left( x \right)$ 在 $\left( -\infty,x_0 \right)$ 上是减函数，所以只需证明 $$f\left( x_1 \right) &gt; f\left( 2x_0-x_2 \right)$$ 因为 $f\left( x_1 \right)=f\left( x_2 \right)$,所以只需证明 $$f\left( x_2 \right) &gt; f\left( 2x_0-x_2 \right)$$ 令  $g\left( x \right)=f\left( x \right)-f\left( 2x_0-x \right)$,由基本不等式可得 $$g’\left( x \right)=ae^x+\dfrac{1}{ae^x}-2\geqslant2-2=0$$ 所以 $g\left( x \right)$ 是增函数，由 $x_2 &gt; x_0$ 得 $g\left( x_2 \right) &gt; g\left( x_0 \right)$,即 $$f\left( x_2 \right)-f\left( 2x_0-x_2 \right) &gt; f\left( x_0 \right)-f\left( 2x_0-x_0 \right)=0$$ 即 $f\left( x_2 \right) &gt; f\left( 2x_0-x_2 \right)$.综上 $x_1+x_2 &lt; 2x_0$.</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/函数与导数/" rel="tag"><i class="fa fa-tag"></i> 函数与导数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20181026/function/" rel="next" title="存在性问题与定义域">
+                <i class="fa fa-chevron-left"></i> 存在性问题与定义域
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20190121/function/" rel="prev" title="又见 $x_1,x_2$">
+                又见 $x_1,x_2$ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">74</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text"> 题目 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法"><span class="nav-number">2.</span> <span class="nav-text"> 解法 </span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
