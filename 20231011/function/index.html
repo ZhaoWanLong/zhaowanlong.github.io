@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目已知函数$f(x)=a x \ln x-2 x+3$, 其中 $a&amp;gt;0$.  当$a=1$ 时, 求 $f(x)$ 的最小值; 若$\mathrm{e}^{1-x} \leqslant f(x)$ 对任意的 $x \in(0,+\infty)$ 恒成立, 求实数 $a$ 的取值范围.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-10-18T09:36:40.479Z">
+<meta property="og:updated_time" content="2023-10-18T09:40:52.285Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="恒成立与极值点">
 <meta name="twitter:description" content="题目已知函数$f(x)=a x \ln x-2 x+3$, 其中 $a&amp;gt;0$.  当$a=1$ 时, 求 $f(x)$ 的最小值; 若$\mathrm{e}^{1-x} \leqslant f(x)$ 对任意的 $x \in(0,+\infty)$ 恒成立, 求实数 $a$ 的取值范围.">
@@ -419,7 +419,7 @@
 <a id="more"></a>
 <h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><ol>
 <li>$f(x)= x\ln x -2x+3$,则$f’(x)=\ln x -1$,</li>
-<li>令 $g(x)=f(x)-e^{1-x}=a x \ln x-2 x+3-e^{1-x}$,<br>由题意 $g(x) \geqslant 0$,因为$g(1)=0$,所以$g(x) \geqslant g(1)$对$x&gt;0$恒成立,<br>从而$x=1$为$g(x)$的最小值点，也为它的极小值点,所以$g^{\prime}(1)=0.$<br>因为$g^{\prime}(x)=a(\ln x+1)-2+e^{1-x}$,<br>所以$g^{\prime}(1)=a-2+1=a-1=0$,所以$a=1$.<br>下面证明$a=1$的 $g(x) \geqslant 0$<br>当$a=1$时,$g(x)=x \ln x-2 x+3-e^{1-x}$, $g^{\prime}(x)=\ln x-1+e^{1-x}$,所以$$g^{\prime \prime}(x)=\frac{1}{x}-e^{1-x}=\frac{1}{x}-\frac{1}{e^{x-1}}=\frac{e^{x-1}-x}{x e^{x-1}}$$<br>令$h(x)=e^{x-1}-x$,当$x\in(0,+\infty)$时,$h’(x)=e^{x-1}-1&gt;0$,$h(x)$递增，所以$x&gt;0$时，$h(x) &gt; 0 $，即$e^{x-1}&gt; x$.<br>从而$x\in(0,+\infty)$时，$g^{\prime \prime}(x) &gt; 0,g^{\prime}(x)$递增,又$g^{\prime}(1)=0$,<br>所以$x\in (0,1),g’(x) &lt; 0,g(x)$递减, $x\in (1,+\infty),g’(x) &lt; 0,g(x)$递增.<br>所以$x&gt;0$时，$g(x)\geqslant g(1)=0$成立.<br>综上$a=1$.</li>
+<li>令 $g(x)=f(x)-e^{1-x}=a x \ln x-2 x+3-e^{1-x}$,<br>由题意 $x&gt;0$时，$g(x) \geqslant 0$,因为$g(1)=0$,所以$g(x) \geqslant g(1)$对$x&gt;0$恒成立,<br>从而$x=1$为$g(x)$的最小值点，也为它的极小值点,所以$g^{\prime}(1)=0.$<br>因为$g^{\prime}(x)=a(\ln x+1)-2+e^{1-x}$,<br>所以$g^{\prime}(1)=a-2+1=a-1=0$,所以$a=1$.<br>下面证明$a=1$的 $g(x) \geqslant 0$.<br>当$a=1$时,$g(x)=x \ln x-2 x+3-e^{1-x}$, $g^{\prime}(x)=\ln x-1+e^{1-x}$,所以$$g^{\prime \prime}(x)=\frac{1}{x}-e^{1-x}=\frac{1}{x}-\frac{1}{e^{x-1}}=\frac{e^{x-1}-x}{x e^{x-1}}$$<br>令$h(x)=e^{x-1}-x$,当$x\in(0,+\infty)$时,$h’(x)=e^{x-1}-1&gt;0$,$h(x)$递增，<br>所以$x&gt;0$时，$h(x) &gt; 0 $，即$e^{x-1}&gt; x$.<br>从而$x\in(0,+\infty)$时，$g^{\prime \prime}(x) &gt; 0,g^{\prime}(x)$递增,又$g^{\prime}(1)=0$,<br>所以$x\in (0,1),g’(x) &lt; 0,g(x)$递减, $x\in (1,+\infty),g’(x) &lt; 0,g(x)$递增.<br>所以$x&gt;0$时，$g(x)\geqslant g(1)=0$成立.<br>综上$a=1$.</li>
 </ol>
 
       
