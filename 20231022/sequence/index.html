@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目(2023年新高考1卷第$20$题 ) 设等差数列$\left\{a_n\right\}$的公差为$d$, 且$d&amp;gt;1$. 令$b_n=\dfrac{n^2+n}{a_n}$, 记$S_n, T_n$分别为数列$\left\{a_n\right\}$,$\left\{b_n\right\}$的前$n$项和.   若$3 a_2=3 a_1+a_3, S_3+T_3=21$, 求$\lef">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-10-22T03:17:01.160Z">
+<meta property="og:updated_time" content="2023-10-22T03:22:09.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2023年新高考1卷数列大题解析">
 <meta name="twitter:description" content="题目(2023年新高考1卷第$20$题 ) 设等差数列$\left\{a_n\right\}$的公差为$d$, 且$d&amp;gt;1$. 令$b_n=\dfrac{n^2+n}{a_n}$, 记$S_n, T_n$分别为数列$\left\{a_n\right\}$,$\left\{b_n\right\}$的前$n$项和.   若$3 a_2=3 a_1+a_3, S_3+T_3=21$, 求$\lef">
@@ -423,7 +423,11 @@
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><blockquote>
 <ol>
 <li>将题式转化为$a_1$和$d$的方程组，解方程求解.</li>
-<li>若一个数列是等差数列，前三项必然是等差数列，从而求解参数的值.<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2></li>
+<li>若一个数列是等差数列，前三项必然是等差数列，从而求解参数的值.</li>
+</ol>
+</blockquote>
+<h2 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h2><blockquote>
+<ol>
 <li>由题设$\{a_n\}$为等差数列且 $3 a_2=3 a_1+a_3$, 可知 $$3 a_1+3 d=3 a_1+a_1+2 d,$$解得 $a_1=d$,所以 $a_n=nd$.从而 $$<br>\begin{aligned}<br>T_3=&amp; \frac{2}{a_1}+\frac{6}{a_2}+\frac{12}{a_3}=\frac{2}{d}+\frac{6}{2 d}+\frac{12}{3 d}=\frac{9}{d},\\<br>S_3=&amp;d+2 d+3 d=6 d.<br>\end{aligned}$$<br>由$S_3+T_3=21$得$6 d+\dfrac{9}{d}=21$, 解得$d=\dfrac{1}{2}$(舍去)或$d=3$.<br>因此, $\left\{a_n\right\}$ 的通项公式为 $a_n=3 n$.</li>
 <li>由题设,等差数列$\{\dfrac{n^2+n}{a_n}\}$前$3$项为$\dfrac{2}{a_1},\dfrac{6}{a_2},\dfrac{12}{a_3}$,由等差中项得<br>$$\dfrac{6}{a_2}=\dfrac{1}{a_1}+\dfrac{6}{a_3},$$<br>又数列$\left\{a_n\right\}$为等差数列, 故<br>$$\frac{6}{a_1+d}=\frac{1}{a_1}+\frac{6}{a_1+2 d},$$<br>解得 $a_1=d$ 或 $a_1=2 d$.<ul>
 <li>当$a_1=d$时,$a_n=nd,b_n=\dfrac{1}d(n+1)$,从而$$S_n=\frac{n(n+1) d}{2}, T_n=\frac{n(n+3)}{2 d},$$<br>从而<br>$$S_{99}-T_{99}=\frac{99 \times 100 d}{2}-\frac{99 \times 102}{2 d}=99,$$<br>解得 $d=-1$ (舍去) 或 $d=\dfrac{51}{50}$.   </li>
