@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 ( 2023年新高考2卷第$18$题 )  已知 $\{a_n\}$ 为等差数列, $b_n=\begin{cases}a_n-6, &amp;amp; n \text{为奇数,} \\\ 2 a_n, &amp;amp; n \text {为偶数.}\end{cases}$ 记 $S_n, T_n$ 分别为数列 $\{a_n\},\{b_n\}$ 的前$n$项和,$S_4=32, T_3=16$.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-10-23T09:54:18.544Z">
+<meta property="og:updated_time" content="2023-10-23T09:55:10.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数列问题中的奇偶讨论">
 <meta name="twitter:description" content="题目 ( 2023年新高考2卷第$18$题 )  已知 $\{a_n\}$ 为等差数列, $b_n=\begin{cases}a_n-6, &amp;amp; n \text{为奇数,} \\\ 2 a_n, &amp;amp; n \text {为偶数.}\end{cases}$ 记 $S_n, T_n$ 分别为数列 $\{a_n\},\{b_n\}$ 的前$n$项和,$S_4=32, T_3=16$.">
@@ -421,12 +421,10 @@
 </ol>
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><ol>
 <li>设 $\{a_n\}$ 的通项公式为 $a_n=a_1+(n-1) d$, 由题设得$$S_4=4 a_1+6 d, \quad T_3=b_1+b_2+b_3=4 a_1+4 d-12 .$$<br>由 $\left\{\begin{array}{l}4 a_1+6 d=32, \\\ 4 a_1+4 d-12=16\end{array}\right.$ 解得 $a_1=5, d=2$.<br>所以 $a_n=5+2(n-1)=3+2 n$.</li>
-<li><p>由题意<br> $$\begin{aligned}<br> T_{2 n} &amp; =（b_1+b_3+\cdots+b_{2 n-1}）+(b_2+b_4+\cdots+b_{2 n}) \\\\<br> &amp; =(a_1+a_3+\cdots+a_{2 n-1}-6 n)+(2 a_2+2 a_4+\cdots+2 a_{2 n}) \\\\<br> &amp; =S_{2 n}+a_2+\cdots+a_{2 n}-6 n=S_{2 n}+2 n^2-n . \\\\<br> T_{2 n+1} &amp;= T_{2 n}+b_{2 n+1}=(S_{2 n}+2 n^2-n)+(a_{2 n+1}-6)=S_{2 n+1}+2 n^2-n-6 .<br>\end{aligned}<br>$$</p>
-<ul>
+<li>由题意<br> $$\begin{aligned}<br> T_{2 n} &amp; =（b_1+b_3+\cdots+b_{2 n-1}）+(b_2+b_4+\cdots+b_{2 n}) \\\\<br> &amp; =(a_1+a_3+\cdots+a_{2 n-1}-6 n)+(2 a_2+2 a_4+\cdots+2 a_{2 n}) \\\\<br> &amp; =S_{2 n}+a_2+\cdots+a_{2 n}-6 n=S_{2 n}+2 n^2-n . \\\\<br> T_{2 n+1} &amp;= T_{2 n}+b_{2 n+1}=(S_{2 n}+2 n^2-n)+(a_{2 n+1}-6)=S_{2 n+1}+2 n^2-n-6 .<br>\end{aligned}<br>$$<ul>
 <li>当 $n \geqslant 1$ 时, $T_{2 n}-S_{2 n}=2 n^2-n&gt;0$, 故 $T_{2 n}&gt;S_{2 n}$;</li>
-<li>当$n&gt;2$时, $T_{2 n+1}-S_{2 n+1}=2 n^2-n-6&gt;0$,故 $T_{2 n+1}&gt;S_{2 n+1}$.  </li>
+<li>当$n&gt;2$时, $T_{2 n+1}-S_{2 n+1}=2 n^2-n-6&gt;0$,故 $T_{2 n+1}&gt;S_{2 n+1}$.<br>综上, 当 $n&gt;5$ 时, $T_n&gt;S_n$.</li>
 </ul>
-<p>综上, 当 $n&gt;5$ 时, $T_n&gt;S_n$.</p>
 </li>
 </ol>
 
