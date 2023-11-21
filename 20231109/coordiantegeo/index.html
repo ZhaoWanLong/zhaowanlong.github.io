@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhaowanlong.github.io/image/20231109.png">
 <meta property="og:image" content="https://zhaowanlong.github.io/image/20231109.png">
-<meta property="og:updated_time" content="2023-11-09T07:31:37.290Z">
+<meta property="og:updated_time" content="2023-11-13T08:36:44.817Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="相等的夹缝">
 <meta name="twitter:description" content="题目 过双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a&amp;gt;0, b&amp;gt;0)$ 的右焦点$F_2$作渐近线$y=\dfrac{b}{a} x$的垂线, 垂足为$H$, 与双曲线交于$A, B$ 两点, 若$\overrightarrow{A B}=4 \overrightarrow{H B}$,$|\overrightarrow{F_2 H}|=6$, 求">
@@ -416,7 +416,7 @@
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p> 过双曲线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1(a&gt;0, b&gt;0)$ 的右焦点$F_2$作渐近线$y=\dfrac{b}{a} x$的垂线, 垂足为$H$, 与双曲线交于$A, B$ 两点, 若$\overrightarrow{A B}=4 \overrightarrow{H B}$,$|\overrightarrow{F_2 H}|=6$, 求双曲线的方程.</p>
  <a id="more"></a>
-<h1 id="解析一"><a href="#解析一" class="headerlink" title="解析一"></a>解析一</h1><p> 由 $\overrightarrow{A B}=4 \overrightarrow{H B}$知$H$在线段$A B$上，故$A$,$B$分别在双曲线的左、右两支上.<br> <center><br><img src="https://zhaowanlong.github.io/image/20231109.png" alt="20231109" style="zoom:20%;"><br> </center></p>
+<h1 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h1><p> 由 $\overrightarrow{A B}=4 \overrightarrow{H B}$知$H$在线段$A B$上，故$A$,$B$分别在双曲线的左、右两支上.<br> <center><br><img src="https://zhaowanlong.github.io/image/20231109.png" alt="20231109" style="zoom:20%;"><br> </center></p>
 <p>设$A B$的方程$ x=m y+c(m=-\dfrac{b}{a})$<br>设$AB$与渐近线$\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=0$ 交于 $H(x_1, y_1), T(x_2, y_2)$.<br>由 $ \left\{\begin{array}{c}<br>x=m y+c ,\\\\<br>\frac{x^2}{a^2}-\frac{y^2}{b^2}=0 ,<br>\end{array}\right.$<br>得<br>$$\left(m^2 b^2-a^2\right) y^2+2 b^2 m c y+b^2 c^2=0$$<br>所以<br>$$\Delta_1=4 b^4 m^2 c^2-4 b^2 c^2\left(m^2 b^2-a^2\right)=4 a^2 b^2 c^2 $$<br>且<br>$$<br>y_1+y_2=\frac{-2 b^2 m c}{m^2 b^2-a^2} ,\quad y_1 y_2=\frac{b^2 c^2}{m^2 b^2-a^2}<br>$$<br>设 $A\left(x_3, y_3\right), B\left(x_4, y_4\right)$,<br>由$<br>\left\{\begin{array}{c}<br>x=m y+c ,\\\ \frac{x^2}{a^2}-\frac{y^2}{b^2}=1 ,<br>\end{array}\right.<br>$<br>得<br>$$ \left(m^2 b^2-a^2\right) y^2+2 b^2 m c y+b^4=0$$<br>因为$m=-\dfrac{b}{a}$,所以<br>$$ \Delta_2=4 b^4 m^2 c^2-4\left(m^2 b^2-a^2\right) b^4=4 b^4\left(m^2 c^2-m^2 b^2+a^2\right)=4 b^4\left(m^2 a^2+a^2\right) =4 b^4\left(a^2+b^2\right)=4 b^4 c^2$$<br>且<br>$$ y_3+y_4=\frac{2 b^2 m c}{m^2 b^2-a^2} ,\quad y_3 y_4=\frac{b^4}{m^2 b^2-a^2} $$<br>由$y_1+y_2=y_3+y_4$可得线段$TH$与线段$AB$中点重合，从而 $A T=B H$.<br>又 $\overrightarrow{A B}=4 \overrightarrow{H B}$ 所以 $|A B|=2|T H|$,由弦长公式<br>$$<br>\begin{aligned}<br>&amp; \sqrt{1+m^2}\left|y_3-y_4\right|=2 \sqrt{1+m^2}\left|y_1-y_2\right| \\<br>\implies&amp; \sqrt{1+m^2} \cdot \frac{\sqrt{\Delta_2}}{\left|m^2 b^2-a^2\right|}=2 \sqrt{1+m^2} \cdot \frac{\sqrt{\Delta_1}}{\left|m^2 b^2-a^2\right|}\\<br>\implies&amp;  \Delta_1=\frac{1}{4} \Delta_2 \\<br>\implies&amp;  4 a^2 b^2 c^2=b^4 c^2\\<br> \implies&amp;  b=2 a<br>\end{aligned}<br>$$<br>注意到$b=|F_2H|=6$,故$a=3$.<br>所以双曲线的方程为$\dfrac{x^2}{9}-\dfrac{y^2}{36}=1$.</p>
 <h1 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h1><p> 由 $\overrightarrow{A B}=4 \overrightarrow{H B}$知$H$在线段$A B$上，故$A$,$B$分别在双曲线的左、右两支上.</p>
   <center><br> <img src="https://zhaowanlong.github.io/image/20231109.png" alt="20231109" style="zoom:20%;"><br> </center>
@@ -461,6 +461,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20231121/coordinate/" rel="prev" title="直角三角形的内切圆">
+                直角三角形的内切圆 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -537,7 +541,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">87</span>
+                  <span class="site-state-item-count">88</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -594,7 +598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析一"><span class="nav-number">2.</span> <span class="nav-text">解析一</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法二"><span class="nav-number">3.</span> <span class="nav-text">解法二</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法一"><span class="nav-number">2.</span> <span class="nav-text">解法一</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解法二"><span class="nav-number">3.</span> <span class="nav-text">解法二</span></a></li></ol></div>
             
 
           </div>
