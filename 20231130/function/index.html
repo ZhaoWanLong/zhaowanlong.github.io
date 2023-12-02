@@ -82,14 +82,14 @@
 <meta name="description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
 <meta name="keywords" content="函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一道多变量问题的多种解法">
+<meta property="og:title" content="一道导数压轴题的六种解法">
 <meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20231130/function/index.html">
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-12-02T04:19:18.190Z">
+<meta property="og:updated_time" content="2023-12-02T13:39:33.493Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一道多变量问题的多种解法">
+<meta name="twitter:title" content="一道导数压轴题的六种解法">
 <meta name="twitter:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>一道多变量问题的多种解法 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>一道导数压轴题的六种解法 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -334,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一道多变量问题的多种解法</h1>
+          <h1 class="post-title" itemprop="name headline">一道导数压轴题的六种解法</h1>
         
 
         <div class="post-meta">
@@ -433,7 +433,7 @@
 <h2 id="解法三-含参对数均值"><a href="#解法三-含参对数均值" class="headerlink" title="解法三(含参对数均值)"></a>解法三(含参对数均值)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
-<p> $F(x)$的导函数为<br>\begin{aligned}<br>F^{\prime}(x)=\dfrac{2}{x}-a=\dfrac{2-a x}{x}<br>\end{aligned}<br>当$a \leqslant 0$ 时, $F^{\prime}(x) &gt; 0 ， F(x)$ 在 $(0,+\infty)$ 递增， $F(x)$ 不可能有两个零点.<br>当 $a &gt; 0$ 时， $x \in(0, \dfrac{2}{a}) ， F^{\prime}(x) &gt; 0 ， F(x)$ 递增,$x \in(\dfrac{2}{a},+\infty), F^{\prime}(x) &lt; 0, F(x)$ 递减.<br>要使 $F(x)$ 在 $(0,+\infty)$ 有两个零点, 必有<br>\begin{align}<br>F(\dfrac{2}{a})=2 \ln \dfrac{2}{a}-1 &gt; 0 \implies \dfrac{2}{a} &gt; \sqrt{e}\tag{1}<br>\end{align}<br>不妨设 $0 &lt; x_1 &lt; \dfrac{2}{a} &lt; x_2$，<br>由$(1)$式, 要证 $x_1+x_2 &gt; 2 \sqrt{e}$ ，可证 $x_1+x_2 &gt; \dfrac{4}{a}$.<br>由$F(x_1)=F(x_2)$得<br>\begin{align}<br>2\ln x_1-ax_1=2\ln x_2-ax_2\tag{2}<br>\end{align}<br>所以<br>\begin{aligned}<br>\dfrac{2(x_2-x_1)}{\ln x_2-\ln x_1}=\dfrac{4}{a}<br>\end{aligned}<br>只需证明<br>\begin{aligned}<br>&amp;x_1+x_2 &gt; \dfrac{2(x_2-x_1)}{\ln x_2-\ln x_1}\\\\<br>\iff&amp;\ln \dfrac{x_2}{x_1} &gt; \dfrac{2(x_2-x_1)}{x_2+x_1}\\\\<br>\iff&amp;\ln \dfrac{x_2}{x_1} &gt; \dfrac{2(\frac{x_2}{x_1}-1)}{\frac{x_2}{x_1}+1}<br>\end{aligned}<br>令$t=\dfrac{x_2}{x_1}(t &gt; 1)$,即证明<br>\begin{aligned}<br>\ln t-\dfrac{2(t+1)}{(t-1)} &gt; 0<br>\end{aligned}<br>令$h(x)=\ln x-\dfrac{2(x+1)}{x-1}(x\geqslant1)$,需证明$h(t) &gt; 0$.<br>当$x &gt; 1$时，$h’(x)=\dfrac{(x-1)^2}{x (x+1)^2} &gt; 0$,$h(x)$单调递增.<br>又$t &gt; 1$，所以$h(t) &gt; h(1)=0$成立.<br>综上所述,$x_1+x_2 &gt; 2\sqrt{e}$. </p>
+<p> $F(x)$的导函数为<br>\begin{aligned}<br>F^{\prime}(x)=\dfrac{2}{x}-a=\dfrac{2-a x}{x}<br>\end{aligned}<br>当$a \leqslant 0$ 时, $F^{\prime}(x) &gt; 0 ， F(x)$ 在 $(0,+\infty)$ 递增， $F(x)$ 不可能有两个零点.<br>当 $a &gt; 0$ 时， $x \in(0, \dfrac{2}{a}) ， F^{\prime}(x) &gt; 0 ， F(x)$ 递增,$x \in(\dfrac{2}{a},+\infty), F^{\prime}(x) &lt; 0, F(x)$ 递减.<br>要使 $F(x)$ 在 $(0,+\infty)$ 有两个零点, 必有<br>\begin{align}<br>F(\dfrac{2}{a})=2 \ln \dfrac{2}{a}-1 &gt; 0 \implies \dfrac{2}{a} &gt; \sqrt{e}\tag{1}<br>\end{align}<br>不妨设 $0 &lt; x_1 &lt; \dfrac{2}{a} &lt; x_2$，<br>由$(1)$式, 要证 $x_1+x_2 &gt; 2 \sqrt{e}$ ，可证<br>$$\begin{align}<br>x_1+x_2 &gt; \dfrac{4}{a}.\tag{2}<br>\end{align}$$<br>由$F(x_1)=F(x_2)$得<br>$$\begin{aligned}<br>2\ln x_1-ax_1=2\ln x_2-ax_2<br>\end{aligned}$$<br>所以<br>\begin{aligned}<br>\dfrac{2(x_2-x_1)}{\ln x_2-\ln x_1}=\dfrac{4}{a}<br>\end{aligned}<br>由$(2)$只需证明<br>\begin{aligned}<br>&amp;x_1+x_2 &gt; \dfrac{2(x_2-x_1)}{\ln x_2-\ln x_1}\\\\<br>\iff&amp;\ln \dfrac{x_2}{x_1} &gt; \dfrac{2(x_2-x_1)}{x_2+x_1}\\\\<br>\iff&amp;\ln \dfrac{x_2}{x_1} &gt; \dfrac{2(\frac{x_2}{x_1}-1)}{\frac{x_2}{x_1}+1}<br>\end{aligned}<br>令$t=\dfrac{x_2}{x_1}(t &gt; 1)$,即证明<br>\begin{aligned}<br>\ln t-\dfrac{2(t+1)}{(t-1)} &gt; 0<br>\end{aligned}<br>令$h(x)=\ln x-\dfrac{2(x+1)}{x-1}(x\geqslant1)$,需证明$h(t) &gt; 0$.<br>当$x &gt; 1$时，$h’(x)=\dfrac{(x-1)^2}{x (x+1)^2} &gt; 0$,$h(x)$单调递增.<br>又$t &gt; 1$，所以$h(t) &gt; h(1)=0$成立.<br>综上所述,$x_1+x_2 &gt; 2\sqrt{e}$. </p>
 <h2 id="解法四-不含参偏移"><a href="#解法四-不含参偏移" class="headerlink" title="解法四(不含参偏移)"></a>解法四(不含参偏移)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.  </p>
 </blockquote>
@@ -442,7 +442,7 @@
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
 <p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2). $<br>所以<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>令$x_2=tx_1(t &gt; 1)$,代入$(1)$解得<br>$$<br>\begin{aligned}<br>x_1&amp;=e^{\frac{\ln t}{t-1}-\frac{1}{2}}=\frac{t^{\frac{1}{t-1}}}{\sqrt{e}}, \\\\<br>x_2&amp;=\frac{t^{1+\frac{1}{t-1}}}{\sqrt{e}}=\frac{t^{\frac{t}{t-1}}}{\sqrt{e}}<br>\end{aligned}<br>$$<br>由基本不等式<br>$$<br>\begin{aligned}x_1+x_2&amp;=\frac{1}{\sqrt{e}}\left(t^{\frac{1}{t-1}}+t^{\frac{t}{t-1}}\right)\\\\<br>&amp; \geqslant \frac{2}{\sqrt{e}} \sqrt{t^{\frac{1}{t-1}} \cdot t^{\frac{t}{t-1}}}\\\\<br>&amp;=\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}}<br>\end{aligned}$$<br>要证 $x_1+x_2 &gt; 2 \sqrt{e}$, 即证<br>$$<br>\begin{aligned}<br>\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}} &gt; 2 \sqrt{e}<br>&amp; \iff t^{\frac{t+1}{t-1}} &gt; e^2 \\\\<br>&amp; \iff \frac{t+1}{t-1} \ln t &gt; 2 \\\\<br>&amp; \iff \ln t-\frac{2(t-1)}{t+1} &gt; 0<br>\end{aligned}<br>$$<br>令$h(x)=\ln x-\dfrac{2(x+1)}{x-1}(x\geqslant1)$,需证明$h(t) &gt; 0$.<br>当$x &gt; 1$时，$h’(x)=\dfrac{(x-1)^2}{x (x+1)^2} &gt; 0$,$h(x)$单调递增.<br>又$t &gt; 1$，所以$h(t) &gt; h(1)=0$成立.<br>综上所述,$x_1+x_2 &gt; 2\sqrt{e}$.</p>
-<h2 id="解法六-不含参对数均值"><a href="#解法六-不含参对数均值" class="headerlink" title="解法六}(不含参对数均值)"></a>解法六}(不含参对数均值)</h2><blockquote>
+<h2 id="解法六-不含参对数均值"><a href="#解法六-不含参对数均值" class="headerlink" title="解法六(不含参对数均值)"></a>解法六(不含参对数均值)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
 <p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2),$即<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>由$x_1,x_2 &gt; 0,h(x_1)=h(x_2)=a &gt; 0$,可得$2 \ln x_1+1 &gt; 0,2\ln x_2+1 &gt; 0$<br>将$(1)$两边取自然对数,可得<br>$$<br>\begin{align}<br>&amp; \ln \frac{2 \ln x_1+1}{x_1}=\ln \frac{2 \ln x_2+1}{x_2} \notag \\\\<br>\iff &amp; \ln (2 \ln x_1+1)-\ln x_1=\ln (2 \ln x_2+1)-\ln x_2 \notag \\\\<br>\iff &amp; \frac{\ln x_2-\ln x_1}{\ln (2 \ln x_2+1)-\ln (2 \ln x_2+1)}=1 \notag \\\\<br>\iff &amp; \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)}=2 \tag{2}<br>\end{align}<br>$$<br>由对数均值不等式$\frac{m-n}{\ln m-\ln n} &lt; \frac{m+n}{2}$ (证略)可得<br>$$ \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)} &lt; \frac{(2 \ln x_2+1)+(2 \ln x_1+1)}{2}=\ln (x_1 x_2)+1 $$<br>由$(2)$得<br>$$\ln (x_1x_2)+1 &gt; 2$$<br>所以$x_1 x_2 &gt; e $，所以$x_1+x_2 &gt; 2 \sqrt{x_1 x_2}=2 \sqrt{e}.$</p>
@@ -618,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法一-含参偏移"><span class="nav-number">2.1.</span> <span class="nav-text">解法一(含参偏移)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法二-含参换元"><span class="nav-number">2.2.</span> <span class="nav-text">解法二(含参换元)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法三-含参对数均值"><span class="nav-number">2.3.</span> <span class="nav-text">解法三(含参对数均值)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法四-不含参偏移"><span class="nav-number">2.4.</span> <span class="nav-text">解法四(不含参偏移)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法五-不含参换元"><span class="nav-number">2.5.</span> <span class="nav-text">解法五(不含参换元)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法六-不含参对数均值"><span class="nav-number">2.6.</span> <span class="nav-text">解法六}(不含参对数均值)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解法一-含参偏移"><span class="nav-number">2.1.</span> <span class="nav-text">解法一(含参偏移)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法二-含参换元"><span class="nav-number">2.2.</span> <span class="nav-text">解法二(含参换元)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法三-含参对数均值"><span class="nav-number">2.3.</span> <span class="nav-text">解法三(含参对数均值)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法四-不含参偏移"><span class="nav-number">2.4.</span> <span class="nav-text">解法四(不含参偏移)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法五-不含参换元"><span class="nav-number">2.5.</span> <span class="nav-text">解法五(不含参换元)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解法六-不含参对数均值"><span class="nav-number">2.6.</span> <span class="nav-text">解法六(不含参对数均值)</span></a></li></ol></li></ol></div>
             
 
           </div>
