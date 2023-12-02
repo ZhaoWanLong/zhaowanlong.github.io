@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-12-02T04:10:27.699Z">
+<meta property="og:updated_time" content="2023-12-02T04:19:18.190Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一道多变量问题的多种解法">
 <meta name="twitter:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
@@ -445,7 +445,7 @@
 <h2 id="解法六-不含参对数均值"><a href="#解法六-不含参对数均值" class="headerlink" title="解法六}(不含参对数均值)"></a>解法六}(不含参对数均值)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
-<p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2),$即<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>由$x_1,x_2 &gt; 0,h(x_1)=h(x_2)=a &gt; 0$,可得$2 \ln x_1+1 &gt; 0,2\ln x_2+1 &gt; 0$<br>将$(1)$两边取自然对数,可得<br>$$<br>\begin{align}<br>&amp; \ln \frac{2 \ln x_1+1}{x_1}=\ln \frac{2 \ln x_2+1}{x_2} \notag \\\\<br>\iff &amp; \ln (2 \ln x_1+1)-\ln x_1=\ln (2 \ln x_2+1)-\ln x_2 \notag \\\\<br>\iff &amp; \frac{\ln x_2-\ln x_1}{\ln (2 \ln x_2+1)-\ln (2 \ln x_2+1)}=1 \notag \\\\<br>\iff &amp; \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)}=2 \tag{2}<br>\end{align}<br>$$<br>由对数均值不等式$\frac{m-n}{\ln m-\ln n} &lt; \frac{m+n}{2}$ (证略)可得<br>$$ \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)} &lt; \frac{(2 \ln x_2+1)+(2 \ln x_1+1)}{2}=\ln (x_1 x_2)+1 $$<br>由$(2)$得<br>$$\ln (x_1x_2)+1 &gt; 2$$<br>所以$x_1 x_2 &gt; e $，所以<br>$x_1+x_2 &gt; 2 \sqrt{x_1 x_2}=2 \sqrt{e}.$</p>
+<p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2),$即<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>由$x_1,x_2 &gt; 0,h(x_1)=h(x_2)=a &gt; 0$,可得$2 \ln x_1+1 &gt; 0,2\ln x_2+1 &gt; 0$<br>将$(1)$两边取自然对数,可得<br>$$<br>\begin{align}<br>&amp; \ln \frac{2 \ln x_1+1}{x_1}=\ln \frac{2 \ln x_2+1}{x_2} \notag \\\\<br>\iff &amp; \ln (2 \ln x_1+1)-\ln x_1=\ln (2 \ln x_2+1)-\ln x_2 \notag \\\\<br>\iff &amp; \frac{\ln x_2-\ln x_1}{\ln (2 \ln x_2+1)-\ln (2 \ln x_2+1)}=1 \notag \\\\<br>\iff &amp; \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)}=2 \tag{2}<br>\end{align}<br>$$<br>由对数均值不等式$\frac{m-n}{\ln m-\ln n} &lt; \frac{m+n}{2}$ (证略)可得<br>$$ \frac{(2 \ln x_2+1)-(2 \ln x_1+1)}{\ln (2 \ln x_2+1)-\ln (2 \ln x_1+1)} &lt; \frac{(2 \ln x_2+1)+(2 \ln x_1+1)}{2}=\ln (x_1 x_2)+1 $$<br>由$(2)$得<br>$$\ln (x_1x_2)+1 &gt; 2$$<br>所以$x_1 x_2 &gt; e $，所以$x_1+x_2 &gt; 2 \sqrt{x_1 x_2}=2 \sqrt{e}.$</p>
 
       
     </div>
