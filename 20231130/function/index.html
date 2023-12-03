@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2023-12-02T14:27:03.284Z">
+<meta property="og:updated_time" content="2023-12-03T10:30:03.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一道导数压轴题的六种解法">
 <meta name="twitter:description" content="题目 ( 2023年11月高三金太阳联考第$22$题 )  已知函数 $f(x)=\ln x-a \sqrt{x}+1, a \in \mathbf{R}$.  若$f(x) \leqslant 0$, 求$a$ 的取值范围; 若关于 $x$ 的方程 $f\left(x^2\right)=\mathrm{e}^{a x}-\mathrm{e} x^2$ 有两个不同的正实根 $x_1, x_2$,">
@@ -441,7 +441,7 @@
 <h2 id="解法五-不含参换元"><a href="#解法五-不含参换元" class="headerlink" title="解法五(不含参换元)"></a>解法五(不含参换元)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
-<p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2). $<br>所以<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>令$x_2=tx_1(t &gt; 1)$,代入$(1)$解得<br>$$<br>\begin{aligned}<br>x_1&amp;=e^{\frac{\ln t}{t-1}-\frac{1}{2}}=\frac{t^{\frac{1}{t-1}}}{\sqrt{e}}, \\\\<br>x_2&amp;=\frac{t^{1+\frac{1}{t-1}}}{\sqrt{e}}=\frac{t^{\frac{t}{t-1}}}{\sqrt{e}}<br>\end{aligned}<br>$$<br>由基本不等式<br>$$<br>\begin{aligned}x_1+x_2&amp;=\frac{1}{\sqrt{e}}\left(t^{\frac{1}{t-1}}+t^{\frac{t}{t-1}}\right)\\\\<br>&amp; \geqslant \frac{2}{\sqrt{e}} \sqrt{t^{\frac{1}{t-1}} \cdot t^{\frac{t}{t-1}}}\\\\<br>&amp;=\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}}<br>\end{aligned}$$<br>要证 $x_1+x_2 &gt; 2 \sqrt{e}$, 即证<br>$$<br>\begin{aligned}<br>\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}} &gt; 2 \sqrt{e}<br>&amp; \iff t^{\frac{t+1}{t-1}} &gt; e^2 \\\\<br>&amp; \iff \frac{t+1}{t-1} \ln t &gt; 2 \\\\<br>&amp; \iff \ln t-\frac{2(t-1)}{t+1} &gt; 0<br>\end{aligned}<br>$$<br>令$h(x)=\ln x-\dfrac{2(x+1)}{x-1}(x\geqslant1)$,需证明$h(t) &gt; 0$.<br>当$x &gt; 1$时，$h’(x)=\dfrac{(x-1)^2}{x (x+1)^2} &gt; 0$,$h(x)$单调递增.<br>又$t &gt; 1$，所以$h(t) &gt; h(1)=0$成立.<br>综上所述,$x_1+x_2 &gt; 2\sqrt{e}$.</p>
+<p>因为$x &gt; 0$,所以<br>$$F(x)=2 \ln x-a x+1=0 \iff a=\dfrac{2 \ln x+1}{x},$$<br>令 $ h(x)=\dfrac{2 \ln x+1}{x}$,  由题意 $h(x_1)=h(x_2). $<br>所以<br>\begin{align}<br>\dfrac{2 \ln x_1+1}{x_1}=\dfrac{2 \ln x_2+1}{x_2}\tag{1}<br>\end{align}<br>令$x_2=tx_1(t &gt; 1)$,代入$(1)$解得<br>$$<br>\begin{aligned}<br>x_1&amp;=e^{\frac{\ln t}{t-1}-\frac{1}{2}}=\frac{t^{\frac{1}{t-1}}}{\sqrt{e}}, \\\\<br>x_2&amp;=\frac{t^{1+\frac{1}{t-1}}}{\sqrt{e}}=\frac{t^{\frac{t}{t-1}}}{\sqrt{e}}<br>\end{aligned}<br>$$<br>由基本不等式<br>$$<br>\begin{aligned}x_1+x_2&amp;=\frac{1}{\sqrt{e}}\left(t^{\frac{1}{t-1}}+t^{\frac{t}{t-1}}\right)\\\\<br>&amp; \geqslant \frac{2}{\sqrt{e}} \sqrt{t^{\frac{1}{t-1}} \cdot t^{\frac{t}{t-1}}}\\\\<br>&amp;=\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}}<br>\end{aligned}$$<br>要证 $x_1+x_2 &gt; 2 \sqrt{e}$, 即证<br>$$<br>\begin{aligned}<br>\frac{2}{\sqrt{e}} \sqrt{t^{\frac{t+1}{t-1}}} &gt; 2 \sqrt{e}<br>&amp; \iff t^{\frac{t+1}{t-1}} &gt; e^2 \\\\<br>&amp; \iff \frac{t+1}{t-1} \ln t &gt; 2 \\\\<br>&amp; \iff \ln t-\frac{2(t-1)}{t+1} &gt; 0<br>\end{aligned}<br>$$<br>令$h(x)=\ln x-\dfrac{2(x-1)}{x+1}(x\geqslant1)$,需证明$h(t) &gt; 0$.<br>当$x &gt; 1$时，$h’(x)=\dfrac{(x-1)^2}{x (x+1)^2} &gt; 0$,$h(x)$单调递增.<br>又$t &gt; 1$，所以$h(t) &gt; h(1)=0$成立.<br>综上所述,$x_1+x_2 &gt; 2\sqrt{e}$.</p>
 <h2 id="解法六-不含参对数均值"><a href="#解法六-不含参对数均值" class="headerlink" title="解法六(不含参对数均值)"></a>解法六(不含参对数均值)</h2><blockquote>
 <p>函数$F(x)=2 \ln x-a x+1$有两个不同的正零点$x_1, x_2$,证明 $x_1+x_2 &gt; 2 \sqrt{\mathrm{e}}$.</p>
 </blockquote>
@@ -485,6 +485,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20231203/vector/" rel="prev" title="用平面几何定理巧解一道向量系数比问题">
+                用平面几何定理巧解一道向量系数比问题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -561,7 +565,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">92</span>
+                  <span class="site-state-item-count">93</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
