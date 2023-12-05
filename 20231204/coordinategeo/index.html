@@ -79,21 +79,22 @@
 
 
 
-<meta name="description" content="题目 过点$P(x_{0}, y_{0})$作圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$两条切线,切点分别为$A,B$.求证直线$AB$的方程为 $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$">
+<meta name="description" content="题目点$M(x_{0}, y_{0})$为圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$内的一定点，过$M$的直线交圆$C$于$A,B$两点,圆$C$在$A,B$两点处的切线交于点$P$,求点$P$的轨迹方程.">
 <meta name="keywords" content="解析几何">
 <meta property="og:type" content="article">
 <meta property="og:title" content="投影向量">
 <meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20231204/coordinategeo/index.html">
 <meta property="og:site_name" content="iMathZhao">
-<meta property="og:description" content="题目 过点$P(x_{0}, y_{0})$作圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$两条切线,切点分别为$A,B$.求证直线$AB$的方程为 $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$">
+<meta property="og:description" content="题目点$M(x_{0}, y_{0})$为圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$内的一定点，过$M$的直线交圆$C$于$A,B$两点,圆$C$在$A,B$两点处的切线交于点$P$,求点$P$的轨迹方程.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://zhaowanlong.github.io/image/20231204-1.png">
+<meta property="og:image" content="https://zhaowanlong.github.io/image/20231204-3.png">
 <meta property="og:image" content="https://zhaowanlong.github.io/image/20231204-2.png">
-<meta property="og:updated_time" content="2023-12-04T13:55:22.292Z">
+<meta property="og:image" content="https://zhaowanlong.github.io/image/20231204-1.png">
+<meta property="og:updated_time" content="2023-12-05T11:26:21.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="投影向量">
-<meta name="twitter:description" content="题目 过点$P(x_{0}, y_{0})$作圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$两条切线,切点分别为$A,B$.求证直线$AB$的方程为 $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$">
-<meta name="twitter:image" content="https://zhaowanlong.github.io/image/20231204-1.png">
+<meta name="twitter:description" content="题目点$M(x_{0}, y_{0})$为圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$内的一定点，过$M$的直线交圆$C$于$A,B$两点,圆$C$在$A,B$两点处的切线交于点$P$,求点$P$的轨迹方程.">
+<meta name="twitter:image" content="https://zhaowanlong.github.io/image/20231204-3.png">
 
 
 
@@ -414,14 +415,16 @@
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p> 过点$P(x_{0}, y_{0})$作圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$两条切线,切点分别为$A,B$.求证直线$AB$的方程为<br> $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$</p>
- <center><img src="https://zhaowanlong.github.io/image/20231204-1.png" alt="20231204-1" style="zoom:40%;"> </center>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>点$M(x_{0}, y_{0})$为圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$内的一定点，过$M$的直线交圆$C$于$A,B$两点,圆$C$在$A,B$两点处的切线交于点$P$,求点$P$的轨迹方程.</p>
+ <center><img src="https://zhaowanlong.github.io/image/20231204-3.png" alt="20231204-3" style="zoom:40%;"> </center>
 
  <a id="more"></a>
-<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>如下图，设 $M(x, y)$为直线$AB$上任一点.因为 $C(a, b),P(x_0, y_0)$,所以<br>$$<br> \begin{aligned}<br> &amp; \overrightarrow{C M}=(x-a, y-b), \\<br> &amp; \overrightarrow{C P}=(x_0-a, y_0-b).<br> \end{aligned}<br> $$</p>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p> 设$P(x, y)$.因为 $C(a, b),M(x_0, y_0)$,所以<br>$$\begin{aligned}<br>        &amp; \overrightarrow{C M}=(x_0-a, y_0-b),\\\\<br>        &amp; \overrightarrow{C P}=(x-a, y-b). \end{aligned}$$</p>
 <center><img src="https://zhaowanlong.github.io/image/20231204-2.png" alt="20231204-2" style="zoom:40%;"> </center>
 
-<p> 因为 $\overrightarrow{C M}$ 在 $\overrightarrow{C P}$ 上投影向量为$\overrightarrow{C N}$ ，所以<br> $$\overrightarrow{C M} \cdot \overrightarrow{C P}=\overrightarrow{C N} \cdot \overrightarrow{C P}=|C N||C P|,$$<br> 在 $\mathrm{Rt}\triangle P B C$ 中，由射影定理<br> $$<br> |C N||C P|=|C B|^2=r^2,<br> $$<br> 所以<br> $$\overrightarrow{C M} \cdot \overrightarrow{C P}=r^2$$<br> 所以<br> $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$<br> 即 $A B$ 方程为 $(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}$ .</p>
+<p>因为 $\overrightarrow{C M}$ 在 $\overrightarrow{C P}$ 上投影向量为$\overrightarrow{C N}$ ，所以$$<br>    \overrightarrow{C M} \cdot \overrightarrow{C P}=\overrightarrow{C N} \cdot \overrightarrow{C P}=|C N||C P|,$$<br>在 $\mathrm{Rt}\triangle P B C$ 中，由射影定理$$<br>|C N||C P|=|C B|^2=r^2,$$<br>所以$$\overrightarrow{C M} \cdot \overrightarrow{C P}=r^2$$<br>所以$$\left(x_0-a\right)(x-a)+\left(y_0-y\right)=r^2.$$即动点$P$的轨迹方程为$\left(x_0-a\right)(x-a)+\left(y_0-b\right)(y-b)=r^2$ .</p>
+<h1 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h1><p>过点$P(x_{0}, y_{0})$作圆$C:(x-a)^{2}+(y-b)^{2}=r^{2}$两条切线,切点分别为$A,B$.求证直线$AB$的方程为<br> $$(x_{0}-a)(x-a)+(y_{0}-b)(y-b)=r^{2}.$$</p>
+ <center><img src="https://zhaowanlong.github.io/image/20231204-1.png" alt="20231204-1" style="zoom:40%;"> </center>
 
       
     </div>
@@ -594,7 +597,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#练习题"><span class="nav-number">3.</span> <span class="nav-text">练习题</span></a></li></ol></div>
             
 
           </div>
