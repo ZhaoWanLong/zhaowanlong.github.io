@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="函数," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目 ( 22024届八省(T8)第一次联考第22题 ) 已知函数 $f(x)=3 a-x-(x+1) \ln (x+1)$, $g(x)=a^2 \mathrm{e}^x+\dfrac{1}{2}(2-a) x^2-3 a x(x&amp;gt;-1)$,$1 \leqslant a \leqslant 6, g(x)$ 的导函数记为 $g^{\prime}(x), \mathrm{e}$ 为自然对数的">
+<meta name="keywords" content="函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2024届八省(T8)第一次联考导数压轴题解析">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20240111/funtion/index.html">
+<meta property="og:site_name" content="iMathZhao">
+<meta property="og:description" content="题目 ( 22024届八省(T8)第一次联考第22题 ) 已知函数 $f(x)=3 a-x-(x+1) \ln (x+1)$, $g(x)=a^2 \mathrm{e}^x+\dfrac{1}{2}(2-a) x^2-3 a x(x&amp;gt;-1)$,$1 \leqslant a \leqslant 6, g(x)$ 的导函数记为 $g^{\prime}(x), \mathrm{e}$ 为自然对数的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2024-01-11T01:56:26.031Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2024届八省(T8)第一次联考导数压轴题解析">
+<meta name="twitter:description" content="题目 ( 22024届八省(T8)第一次联考第22题 ) 已知函数 $f(x)=3 a-x-(x+1) \ln (x+1)$, $g(x)=a^2 \mathrm{e}^x+\dfrac{1}{2}(2-a) x^2-3 a x(x&amp;gt;-1)$,$1 \leqslant a \leqslant 6, g(x)$ 的导函数记为 $g^{\prime}(x), \mathrm{e}$ 为自然对数的">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240111/funtion/"/>
+
+
+
+
+
+  <title>2024届八省(T8)第一次联考导数压轴题解析 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iMathZhao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-statprob">
+          <a href="/categories/统计与概率" rel="section">
+            
+            统计概率
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240111/funtion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iMathZhao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2024届八省(T8)第一次联考导数压轴题解析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-01-11T09:24:16+08:00">
+                2024-01-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/函数/" itemprop="url" rel="index">
+                    <span itemprop="name">函数</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p> <font color="#42c4ba">( 22024届八省(T8)第一次联考第22题 )</font><br> 已知函数 $f(x)=3 a-x-(x+1) \ln (x+1)$, $g(x)=a^2 \mathrm{e}^x+\dfrac{1}{2}(2-a) x^2-3 a x(x&gt;-1)$,<br>$1 \leqslant a \leqslant 6, g(x)$ 的导函数记为 $g^{\prime}(x), \mathrm{e}$ 为自然对数的底数, 约为 2.718 .</p>
+<ol>
+<li>判断函数 $f(x)$ 的零点个数;</li>
+<li><p>设 $x_1$ 是函数 $f(x)$ 的一个零点, $x_2$ 是函数 $g(x)$ 的一个极值点, 证明:<br>(i). $-1&lt;x_2&lt;1&lt;x_1$;<br>(ii). $f(x_2)&lt;g^{\prime}(x_1)$.</p>
+<a id="more"></a>
+</li>
+</ol>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="第一问解答"><a href="#第一问解答" class="headerlink" title="第一问解答"></a>第一问解答</h2><p>$f(x)$的定义域是$(-1,+\infty)$.</p>
+<ol>
+<li>当$x\in (-1,0]$时，有$(x+1)\ln(x+1)\leqslant 0$,<br>又$1\leqslant a\leqslant6$,所以<br>$$f(x)=3 a-x-(x+1) \ln (x+1)\geqslant 3a&gt;0，$$所以$f(x)$在$ (-1,0]$上没有零点.</li>
+<li>当$x\in (0,+\infty)$时，$f^{\prime}(x)=-2-\ln (x+1) &lt; 0$,<br>所以$f(x)$在$(0,+\infty)$上单调递减.又<br>\begin{align_}<br>f(1)=&amp;3 a-1-2 \ln 2 \geqslant 3-1-2 \ln 2=2(1-\ln 2)&gt;0,\\\\<br>f(3a)=&amp;-(3a+1)\ln(3a+1)&lt;0<br>\end{align_}<br>所以$f(x)$在$ (0,+\infty)$有且仅有一个零点$x_1$,且$x_1\in (1,3a)$.<br>所以 $f(x)$ 的零点个数为 1.<h2 id="第二问解答"><a href="#第二问解答" class="headerlink" title="第二问解答"></a>第二问解答</h2></li>
+<li>由$(1)$ 知 $f(x)$ 零点 $x_1&gt;1$.<br>由 $g^{\prime}(x)=a^2 e^x+(2-a) x-3 a$,及$e^x \geqslant x+1$(证略)得，当$x&gt;1$ 时,<br>$$<br>\begin{aligned}<br>g^{\prime}(x) &amp;\geqslant a^2(x+1)+(2-a) x-3 a \\\\<br>&amp; =(a^2-a+2) x+a^2-3 a \\\\<br>&amp; &gt;(a^2-a+2)+a^2-3 a \\\\<br>&amp; =2(a-1)^2 \geqslant 0<br>\end{aligned}<br>$$<br>所以$g(x)$ 在 $(1,+\infty)$ 上单调递增, 没有极值点，故$x_2\notin(1,+\infty)$.<br>又$$g^{\prime}(1)=a^2 e+2-4 a=e(a-\dfrac{2}{e})^2+2-\dfrac{4}{e} &gt; 0,$$所以$1$也不是$g(x)$的极值点.<br>因为$g(x)$定义域为$(-1,+\infty)$,故$-1&lt;x_2&lt;1$.<br>($x_2$的存在性可以用$g’(1)g’(-1)&lt;0$来证明.)<br>综上$-1&lt;x_2&lt;1&lt;x_1$.  </li>
+<li>( <strong>方法一 虚拟零点</strong> )<br>因为 $f(x_1)=g^{\prime}(x_2)=0$, 要证 $f(x_2)<g^{\prime}(x_1)$， 需证="" $f(x_2)+g^{\prime}(x_2)<f(x_1)+g^{\prime}(x_1)$.="" 设="" $h(x)="f(x)+g^{\prime}(x)$," $h(x_2)<h(x_1)$.="" 因为="" $h^{\prime}(x)="a^2" e^x-\ln="" (x+1)-a$,="" 所以="" $$="" h^{\prime="" \prime}(x)="a^2" e^x-\dfrac{1}{x+1}="" 当="" $x="" \in(-1,+\infty)$="" 时，$a^2="" e^x$="" 递增，="" $\dfrac{1}{x+1}$="" 递减，="" $h^{\prime="" \prime}(x)$="" 递增.="" 又="" $$x="" \to-1,="" \to-\infty,="" \prime}(0)="a^2-1" \geqslant="" 0,$$="" 在="" $(-1,+\infty)$="" 上有唯一零点="" $x_0$,="" 且="" $x_0="" \in(-1,0].$="" 当$x="" \in(-1,="" x_0)$="" 时,="" \prime}(x)<0,="" h^{\prime}(x)$="" \in(x_0,+\infty)$="">0, h^{\prime}(x)$ 递增.<br>所以<br>$$ h^{\prime}(x)_{\min}=h^{\prime}(x_0)=a^2 e^{x_0}-\ln (x_0+1)-a,$$<br>由 $h^{\prime}(x_0)=a^2 e^{x_0}-\dfrac{1}{x_0+1}=0$ 得<br>$$a^2 e^{x_0}=\dfrac{1}{x_0+1}\text{ 且} a=\sqrt{\dfrac{1}{e^{x_0}(x_0+1)}}.$$<br>又因为 $-1<x_0 \leqslant="" 0$,所以$\ln="" (x_0+1)<0$="" 且="" $e^{x_0}="" \geqslant="" x_0+1="">0,$ 所以<br>$$<br>\begin{aligned}<br>h^{\prime}(x_0) &amp; =a^2 e^{x_0}-\ln (x_0+1)-a \\\\<br>&amp; =\dfrac{1}{x_0+1}-\ln (x_0+1)-\sqrt{\dfrac{1}{e^{x_0}(x_0+1)}} \\\\<br>&amp; \geqslant \dfrac{1}{x_0+1}-\sqrt{\dfrac{1}{e^{x_0}(x_0+1)}} \\\\<br>&amp; =\dfrac{1}{\sqrt{x_0+1}}(\dfrac{1}{\sqrt{x_0+1}}-\dfrac{1}{\sqrt{e^{x_0}}}) \\\\<br>&amp; =\dfrac{1}{\sqrt{x_0+1}} \cdot \dfrac{\sqrt{e^{x_0}}-\sqrt{x_0+1}}{\sqrt{e^{x_0}} \cdot \sqrt{x_0+1}} \geqslant 0<br>\end{aligned}<br>$$<br>所以 $h^{\prime}(x) \geqslant 0$, 所以 $h(x)$ 在 $(-1,+\infty)$ 单调递增.<br>又$-1<x_2<x_1$ 得="" $h(x_2)<h(x_1)$.="" 所以="" $f(x_2)<g^{\prime}(x_1)$.="" (="" **方法二="" 放缩法**)="" 因为="" $f(x_1)="g^{\prime}(x_2)=0$," 要证="" $f(x_2)<g^{\prime}(x_1)$，="" 需证="" $f(x_2)+g^{\prime}(x_2)<f(x_1)+g^{\prime}(x_1)$.="" 设="" $h(x)="f(x)+g^{\prime}(x)$," $h^{\prime}(x)="a^2" e^x-\ln="" (x+1)-a$,="" 注意到="" $\ln="" (x+1)="" \leqslant="" x$="" ，所以="" $$h^{\prime}(x)="a^2" (x+1)-a="" \geqslant="" a^2="" e^x-x-a="" ,$$="" 令$\varphi(x)="a^2" e^x-x-a(x="">-1) $, 则 $\varphi^{\prime}(x)=a^2 e^x-1 $,</x_2<x_1$></x_0></g^{\prime}(x_1)$，></li>
+</ol>
+<ul>
+<li>当 $\sqrt{e}<a \leqslant="" 6$="" 时,="" $x="">-1$ 时有 $a^2 e^x&gt;e \cdot e^{-1}=1$,<br>所以 $\varphi^{\prime}(x)&gt;0$ ，<br>所以 $\varphi(x)$ 在 $(-1,+\infty)$ 上递增,<br>所以$\varphi(x)&gt;\varphi(-1)=\dfrac{a^2}{e}+1-a$,<br>函数$m(a)=\dfrac{1}{e} a^2-a+1$的 对称轴为 $a=\dfrac{e}{2}$ ，在 $[\sqrt{e} , 6]$ 上递增，<br>所以$ m(a) \geqslant m(\sqrt{e})=2-\sqrt{e}&gt;0$ 即 $\varphi(x)&gt;0$ ,故 $h^{\prime}(x)&gt;0$.</a></li>
+<li>当 $1 \leqslant a \leqslant \sqrt{e}$ 时，令 $\varphi^{\prime}(x)=0$ 得 $x=\ln \dfrac{1}{a^2}$ .<br>当$x \in(-1, \ln \dfrac{1}{a^2}), \varphi^{\prime}(x)<0, \varphi(x)$="" 递减，="" 当="" $x="" \in(\ln="" \dfrac{1}{a^2},+\infty)="" ，="" \varphi^{\prime}(x)="">0 ， \varphi(x)$ 递增.<br>所以 $\varphi(x) \geqslant \varphi(\ln \dfrac{1}{a^2})=1-\ln \dfrac{1}{a^2}-a=1+\ln a^2-a$.<br>令$t(a)=1+2 \ln a-a $,则$t^{\prime}(a)=\dfrac{2}{a}-1 \geqslant \dfrac{2}{\sqrt{e}}-1&gt;0 $,<br>所以$ t(a)$ 在 $[1, \sqrt{e}]$ 递增，<br>所以$ t(a) \geqslant t(1)=0 $,即$\varphi(x) \geqslant 0$，故 $h^{\prime}(x) \geqslant 0$.</0,></li>
+</ul>
+<p>综上,当$1\leqslant a\leqslant 6$时， $h^{\prime}(x) \geqslant 0$, 所以 $h(x)$ 在 $(-1,+\infty)$ 单调递增.<br>又$-1&lt;x_2&lt;x_1$ 得 $h(x_2)&lt;h(x_1)$.<br>所以 $f(x_2)&lt;g^{\prime}(x_1)$.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/函数/" rel="tag"><i class="fa fa-tag"></i> 函数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20231204/coordinategeo/" rel="next" title="投影向量">
+                <i class="fa fa-chevron-left"></i> 投影向量
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">95</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一问解答"><span class="nav-number">2.1.</span> <span class="nav-text">第一问解答</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二问解答"><span class="nav-number">2.2.</span> <span class="nav-text">第二问解答</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
