@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="函数," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目 ( 2024年深圳一模第$14$题 )   已知函数 $f(x)=a(x-x_1)(x-x_2)(x-x_3)(a &amp;gt;  0)$, 设曲线 $y=f(x)$ 在点 $(x_i, f(x_i))$ 处切线的斜率为 $k_i(i=1,2,3)$, 若 $x_1, x_2, x_3$ 均不相等, 且 $k_2=-2$, 则 $k_1+4 k_3$ 的最小值为__.">
+<meta name="keywords" content="函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2024年深圳一模填空压轴题解析">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20240301/function/index.html">
+<meta property="og:site_name" content="iMathZhao">
+<meta property="og:description" content="题目 ( 2024年深圳一模第$14$题 )   已知函数 $f(x)=a(x-x_1)(x-x_2)(x-x_3)(a &amp;gt;  0)$, 设曲线 $y=f(x)$ 在点 $(x_i, f(x_i))$ 处切线的斜率为 $k_i(i=1,2,3)$, 若 $x_1, x_2, x_3$ 均不相等, 且 $k_2=-2$, 则 $k_1+4 k_3$ 的最小值为__.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2024-03-01T02:26:06.480Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2024年深圳一模填空压轴题解析">
+<meta name="twitter:description" content="题目 ( 2024年深圳一模第$14$题 )   已知函数 $f(x)=a(x-x_1)(x-x_2)(x-x_3)(a &amp;gt;  0)$, 设曲线 $y=f(x)$ 在点 $(x_i, f(x_i))$ 处切线的斜率为 $k_i(i=1,2,3)$, 若 $x_1, x_2, x_3$ 均不相等, 且 $k_2=-2$, 则 $k_1+4 k_3$ 的最小值为__.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240301/function/"/>
+
+
+
+
+
+  <title>2024年深圳一模填空压轴题解析 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iMathZhao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-statprob">
+          <a href="/categories/统计与概率" rel="section">
+            
+            统计概率
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240301/function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iMathZhao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2024年深圳一模填空压轴题解析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-03-01T08:32:41+08:00">
+                2024-03-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/函数/" itemprop="url" rel="index">
+                    <span itemprop="name">函数</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p> <font color="#42c4ba">( 2024年深圳一模第$14$题 )</font></p>
+<p>  已知函数 $f(x)=a(x-x_1)(x-x_2)(x-x_3)(a &gt;  0)$, 设曲线 $y=f(x)$ 在点 $(x_i, f(x_i))$ 处切线的斜率为 $k_i(i=1,2,3)$, 若 $x_1, x_2, x_3$ 均不相等, 且 $k_2=-2$, 则 $k_1+4 k_3$ 的最小值为<strong><strong>__</strong></strong>.</p>
+ <a id="more"></a>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>先证明一个引理</p>
+<blockquote>
+<p>若一元三次函数的有三个零点$x_1,x_2,x_3$，则$$\dfrac{1}{f’(x_1)}+\dfrac{1}{f’(x_2)}+\dfrac{1}{f’(x_3)}=0.$$</p>
+<p>证明:不妨设$f(x)=(x-x_1)(x-x_2)(x-x_3)$, 则<br>$$f’(x)=(x-x_2)(x-x_3)+(x-x_1)(x-x_3)+(x-x_1)(x-x_2)$$则<br>$$\begin{aligned}<br>&amp;\dfrac{1}{f’(x_1)}+\dfrac{1}{f’(x_2)}+\dfrac{1}{f’(x_3)}\\<br>=&amp;\dfrac{1}{(x_1-x_2)(x_1-x_3)}+\dfrac{1}{(x_2-x_1)(x_2-x_3)}+\dfrac{1}{(x_3-x_1)(x_3-x_2)}\\<br>=&amp;\dfrac{(x_3-x_2)+(x_1-x_3)+(x_2-x_1)}{(x_1-x_2)(x_2-x_3)(x_3-x_1)}\\<br>=&amp;0.<br>\end{aligned}$$<br> 由引理$$\begin{aligned}<br>\dfrac{1}{k_1}+\dfrac{1}{k_2}+\dfrac{1}{k_3}=0.<br>\end{aligned}$$<br>由$k_2=-2$得$$\begin{aligned}<br>\dfrac{1}{k_1}+\dfrac{1}{k_3}=\dfrac12.<br>\end{aligned}$$<br>由$a &gt;  0$可得$x_1,x_3$位于$f(x)$单调递增区间，所以$k_1,k_3\in(0,+\infty)$,所以<br>$$\begin{aligned}<br>\dfrac12&amp;=\dfrac{1}{k_1}+\dfrac{1}{k_3}\\<br>&amp;=\dfrac{1^2}{k_1}+\dfrac{2^2}{4k_3}\\<br>&amp;\geqslant\dfrac{(1+2)^2}{k_1+4k_3}=\dfrac{9}{k_1+4k_3}\\<br>\end{aligned}$$<br>所以$$k_1+4k_3\leqslant 18.$$<br>当且仅当$k_1=6,k_3=3$取等号，此时可取$f(x)=(x-1) (x-3) (x-4)$.<br>综上，$k_1+4 k_3$ 的最小值为18.</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/函数/" rel="tag"><i class="fa fa-tag"></i> 函数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20240223/function/" rel="next" title="压不住轴的“压轴题”">
+                <i class="fa fa-chevron-left"></i> 压不住轴的“压轴题”
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">97</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
