@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="立体几何," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="题目 ( 2024年晋中市高三5月高考适应考试第$17$题 )  如图,在六面体 $ABCDE$ 中, $BC=B D=\sqrt{6}$, $EC \perp ED$,且$E C=E D=\sqrt{2}$, $AB//$平面$C D E, AE//$平面$BCD$, $AE\perp CD$.  证明: 平面 $A B E \perp$ 平面 $C D E$; 若点$A$到直线 $C D$ 的">
+<meta name="keywords" content="立体几何">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2024年晋中市高三5月高考适应考试立体几何大题解析">
+<meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20240509/solidgeo/index.html">
+<meta property="og:site_name" content="iMathZhao">
+<meta property="og:description" content="题目 ( 2024年晋中市高三5月高考适应考试第$17$题 )  如图,在六面体 $ABCDE$ 中, $BC=B D=\sqrt{6}$, $EC \perp ED$,且$E C=E D=\sqrt{2}$, $AB//$平面$C D E, AE//$平面$BCD$, $AE\perp CD$.  证明: 平面 $A B E \perp$ 平面 $C D E$; 若点$A$到直线 $C D$ 的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://zhaowanlong.github.io/image/20240509-1.png">
+<meta property="og:image" content="https://zhaowanlong.github.io/image/20240509-2.png">
+<meta property="og:updated_time" content="2024-05-09T14:27:58.678Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2024年晋中市高三5月高考适应考试立体几何大题解析">
+<meta name="twitter:description" content="题目 ( 2024年晋中市高三5月高考适应考试第$17$题 )  如图,在六面体 $ABCDE$ 中, $BC=B D=\sqrt{6}$, $EC \perp ED$,且$E C=E D=\sqrt{2}$, $AB//$平面$C D E, AE//$平面$BCD$, $AE\perp CD$.  证明: 平面 $A B E \perp$ 平面 $C D E$; 若点$A$到直线 $C D$ 的">
+<meta name="twitter:image" content="https://zhaowanlong.github.io/image/20240509-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '赵晚龙'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240509/solidgeo/"/>
+
+
+
+
+
+  <title>2024年晋中市高三5月高考适应考试立体几何大题解析 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iMathZhao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">赵晚龙的数学之路</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-hanshu">
+          <a href="/categories/函数" rel="section">
+            
+            函数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sanjiao">
+          <a href="/categories/三角函数" rel="section">
+            
+            三角
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-xiangliang">
+          <a href="/categories/向量" rel="section">
+            
+            向量
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-budengshi">
+          <a href="/categories/不等式" rel="section">
+            
+            不等式
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulie">
+          <a href="/categories/数列" rel="section">
+            
+            数列
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-analyticgeo">
+          <a href="/categories/解析几何" rel="section">
+            
+            解析几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-solidgeo">
+          <a href="/categories/立体几何" rel="section">
+            
+            立体几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-statprob">
+          <a href="/categories/统计与概率" rel="section">
+            
+            统计概率
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-fushu">
+          <a href="/categories/复数" rel="section">
+            
+            复数
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-euclidgeo">
+          <a href="/categories/平面几何" rel="section">
+            
+            平面几何
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zuhe">
+          <a href="/categories/组合" rel="section">
+            
+            组合
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-shulun">
+          <a href="/categories/数论" rel="section">
+            
+            数论
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/zhaowanlong/zhaowanlong.github.io/20240509/solidgeo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵晚龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iMathZhao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2024年晋中市高三5月高考适应考试立体几何大题解析</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">赵晚龙 发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2024-05-09T20:25:11+08:00">
+                2024-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/立体几何/" itemprop="url" rel="index">
+                    <span itemprop="name">立体几何</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p> <font color="#42c4ba">( 2024年晋中市高三5月高考适应考试第$17$题 )</font></p>
+<p> 如图,在六面体 $ABCDE$ 中, $BC=B D=\sqrt{6}$, $EC \perp ED$,且$E C=E D=\sqrt{2}$, $AB//$平面$C D E, AE//$平面$BCD$, $AE\perp CD$.</p>
+<ol>
+<li>证明: 平面 $A B E \perp$ 平面 $C D E$;</li>
+<li><p>若点$A$到直线 $C D$ 的距离为 $2\sqrt{2}, F$ 为棱$AE$的中点,求平面$BDF$ 与平面$BCD$夹角的余弦值.</p>
+<center><br><img src="https://zhaowanlong.github.io/image/20240509-1.png" alt="20240509-1" style="zoom:30%;"><br></center> 
+
+<a id="more"></a>
+</li>
+</ol>
+<h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><h2 id="第一问解答"><a href="#第一问解答" class="headerlink" title="第一问解答"></a>第一问解答</h2><p>取$CD$中点$O$ ，连接 $O E ，$<br>由$EC=ED=\sqrt{2}$ ， $E C\perp ED$ ，得<br>$$OE \perp CD,\text{且}\quad CD=2OE=2.$$<br> <center><br><img src="https://zhaowanlong.github.io/image/20240509-2.png" alt="20240509-2" style="zoom:30%;"><br> </center><br>如图以$OD，OE$分别为 $x, y$ 轴建立空间直角坐标系,则<br>$$C(-1,0,0) , D(1,0,0) , E(0,1,0)$$<br>设$B(a, b, c),(c&gt;0)$. 由$|B C|=|B D|=\sqrt{6}$得<br>$$<br> (a+1)^2+b^2+c^2=(a-1)^2+b^2+c^2=6<br>$$<br>所以<br>$$<br>\begin{align}<br> a=0, &amp;\text{且}\quad b^2+c^2=5 \tag{1}<br> \end{align}<br>$$<br>所以$B(0, b, c)$.<br>由 $A B //$ 平面 $C D E$ ，可设 $A(p, q, c)$ ，则<br>$$\overrightarrow{E A}=(p, q-1, c) , \overrightarrow{C D}=(2,0,0)$$</p>
+<p>因为$ A E \perp C D $,所以<br>$$ \overrightarrow{E A} \cdot \overrightarrow{C D}=2 p=0 $$<br>所以$p=0 $,所以$ A(0, q, c)$.<br>所以$\overrightarrow{A B}=(0, b-q, 0)$,<br>从而 $$\overrightarrow{C D} \cdot \overrightarrow{A B}=2 \times 0+0 \times(b-q)+0 \times0=0 $$<br>所以$C D \perp A B $， 又$ CD \perp AE $且$ A B, A E$ 是平面 $A B E$ 内两相交直线,所以$C D \perp$ 平面 $A BE$,<br>又 $ C D \subset$ 平面 $C D E$,所以平面 $A B E \perp$ 平面 $C D E$.</p>
+<h2 id="第二问解答"><a href="#第二问解答" class="headerlink" title="第二问解答"></a>第二问解答</h2><p>设平面$BCD$的法向量 $\overrightarrow{n}_1=\left(x_1, y_1, z_1\right)$ ，由第一问知 $\overrightarrow{D B}=(-1, b, c)$,故<br>$$<br> \left\{\begin{array}{l}<br>\overrightarrow{n_1} \cdot \overrightarrow{C D}=2 x_1=0 \\<br>\overrightarrow{n_1} \cdot \overrightarrow{D B}=-x_1+b y_1+c z_1=0<br>\end{array}\right.<br>$$<br>可取 $\overrightarrow{n}_1=(0,-c, b)$.<br> 又 $\overrightarrow{E A}=(0, q-1, c)$, $EA//$平面 $B C D$,所以<br>$$\overrightarrow{E A} \cdot\overrightarrow{n_1}=-(q-1) c+b c=0,$$<br>所以 $q=b+1$,所以$A(0, b+1, c)$.<br>由第一问知 $C D \perp A O$,所以点 $A$ 到直线 $C D$ 的距离$OA=2\sqrt2$,所以<br> $$<br> \begin{align}<br> |OA|^2=(b+1)^2+c^2=8\tag{2}<br> \end{align}<br> $$<br>由$(1)，(2)$解得 $b=1, c=2 $. 所以<br>$$ \overrightarrow{n}_1=(0,-2,1), $$<br>且<br>$$ A(0,2,2),\quad D(1,0,0), F\left(0, \frac{3}{2}, 1\right)$$<br> 所以$$ \overrightarrow{D F}=\left(-1, \frac{3}{2}, 1\right) , \overrightarrow{D B}=(-1,1,2)$$<br>设平面$BDF$法向量 $\overrightarrow{n_2}=\left(x_2, y_2, z_2\right)$ ，则<br>$$<br>\left\{\begin{array}{l}<br>\overrightarrow{n_2} \cdot \overrightarrow{D F}=-x_2+\frac{3}{2} y_2+z_2=0 \\<br>\overrightarrow{n}_2 \cdot \overrightarrow{D B}=-x_2+y_2+2 z_2=0<br>\end{array}\right.<br>$$<br>可取 $\overrightarrow{n}_2=(4,2,1)$.所以<br>$$<br>\cos \left\langle\overrightarrow{n}_1, \overrightarrow{n}_2\right\rangle=\frac{\overrightarrow{n}_1 \cdot \overrightarrow{n}_2}{|\overrightarrow{n_1 }||\overrightarrow{n_2} |}=\frac{-3}{\sqrt{5} \cdot \sqrt{21}}=-\frac{\sqrt{105}}{35}<br>$$<br>故平面$BDF$与平面$BCD$夹角的余弦值为 $\frac{\sqrt{105}}{35}$.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/立体几何/" rel="tag"><i class="fa fa-tag"></i> 立体几何</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20240509/inequalities/" rel="next" title="2024年晋中市高三5月高考适应考试填空压轴题解析">
+                <i class="fa fa-chevron-left"></i> 2024年晋中市高三5月高考适应考试填空压轴题解析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">赵晚龙</p>
+              <p class="site-description motion-element" itemprop="description">learn maths,teach maths,enjoy maths</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">101</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解析"><span class="nav-number">2.</span> <span class="nav-text">解析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一问解答"><span class="nav-number">2.1.</span> <span class="nav-text">第一问解答</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二问解答"><span class="nav-number">2.2.</span> <span class="nav-text">第二问解答</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">赵晚龙</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+
+  
+
+  
+
+</body>
+</html>
