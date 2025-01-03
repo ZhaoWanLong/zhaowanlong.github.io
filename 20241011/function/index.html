@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 $f(n)$ 是定义在 $\mathbb{N}^{+}$上的函数，且满足$\begin{array}{llll}&amp;amp;(1) &amp;amp;f(f(n))=4 n+9 &amp;amp; \left(n \in \mathbb{N}^{+}\right) ,\\&amp;amp;(2) &amp;amp; f(2^k)=2^{k+1}+3&amp;amp; (n \in \mathbb{N}),\end{array}$求">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2024-10-11T08:08:24.964Z">
+<meta property="og:updated_time" content="2024-10-11T08:23:35.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数迭代求值">
 <meta name="twitter:description" content="题目 $f(n)$ 是定义在 $\mathbb{N}^{+}$上的函数，且满足$\begin{array}{llll}&amp;amp;(1) &amp;amp;f(f(n))=4 n+9 &amp;amp; \left(n \in \mathbb{N}^{+}\right) ,\\&amp;amp;(2) &amp;amp; f(2^k)=2^{k+1}+3&amp;amp; (n \in \mathbb{N}),\end{array}$求">
@@ -412,8 +412,9 @@
 
       
         <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><blockquote>
-<p>$f(n)$ 是定义在 $\mathbb{N}^{+}$上的函数，且满足<br>$\begin{array}{llll}<br>&amp;(1) &amp;f(f(n))=4 n+9 &amp; \left(n \in \mathbb{N}^{+}\right) ,\\<br>&amp;(2) &amp; f(2^k)=2^{k+1}+3&amp; (n \in \mathbb{N}),<br>\end{array}$<br>求 $f(1789)$.<br> <a id="more"></a></p>
+<p>$f(n)$ 是定义在 $\mathbb{N}^{+}$上的函数，且满足<br>$\begin{array}{llll}<br>&amp;(1) &amp;f(f(n))=4 n+9 &amp; \left(n \in \mathbb{N}^{+}\right) ,\\<br>&amp;(2) &amp; f(2^k)=2^{k+1}+3&amp; (n \in \mathbb{N}),<br>\end{array}$<br>求 $f(1789)$.</p>
 </blockquote>
+ <a id="more"></a>
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>取$f(f(n))=4 n+4$ 中 $n$ 为 $f(n)$ 得<br>\begin{equation}<br> f(f(f(n)))=4 f(n)+9 \tag{1}<br>\end{equation}<br>在$f(f(n))=4 n+9$两边取$f$得<br>\begin{equation}<br> f(f(f(n)))=f(4 n+9)\tag{2}<br> \end{equation}<br>由$(1)$，$(2)$有<br>$$f(4 n+9)=4 f(n)+9$$<br>所以<br>$$<br>\begin{aligned}<br>        f(1789) &amp; =f(4 \times 445+9) \\<br>        &amp; =4 f(445)+9 \\<br>        &amp; =4 f(4 \times 109+9)+9 \\<br>        &amp; =4(4 f(109)+9)+9 \\<br>        &amp; =16 f(109)+45 \\<br>        &amp; =16 f(4 \times 25+9)+45 \\<br>        &amp; =16(4 f(25)+9)+45 \\<br>        &amp; =64 f(4 \times 4+9)+189 \\<br>        &amp; =64(4 f(4)+9)+189 \\<br>        &amp; =256 f(4)+765<br>\end{aligned}<br>$$<br>因为$f(2^k)=2^{k+1}+3 $,所以<br>$$f(4)=f(2^2)=2^3+3=11$$<br>所以<br>$$f(1789)=256 \times 11+765=3581.$$</p>
 
       
@@ -454,6 +455,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20250103/funtion/" rel="prev" title="funtion">
+                funtion <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -530,7 +535,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">104</span>
+                  <span class="site-state-item-count">105</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -607,7 +612,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
