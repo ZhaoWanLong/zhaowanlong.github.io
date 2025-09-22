@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 若函数$f(x)=\dfrac{a}{x}+\ln x$有两个不同的零点$x_1,x_2$,求证: $$x_1f’(x_1)+x_2f’(x_2) &amp;gt; 2\ln a+2.$$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2025-09-12T14:06:10.511Z">
+<meta property="og:updated_time" content="2025-09-22T02:30:14.270Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一道函数压轴题的多种解法">
 <meta name="twitter:description" content="题目 若函数$f(x)=\dfrac{a}{x}+\ln x$有两个不同的零点$x_1,x_2$,求证: $$x_1f’(x_1)+x_2f’(x_2) &amp;gt; 2\ln a+2.$$">
@@ -416,8 +416,8 @@
 <h1 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h1><p>  因为<br>  $$<br>  \begin{aligned}<br>  f(x_1)&amp;=\dfrac{a}{x_1}+\ln x_1=0,\  f(x_2)&amp;=\dfrac{a}{x_2}+\ln x_2=0<br>  \end{aligned}<br>  $$<br>  所以<br>  $$<br>  \dfrac{a}{x_1}+\dfrac{a}{x_2}=-(\ln x_1+\ln x_2)=-\ln (x_1 x_2)<br>  $$<br>  又$f^{\prime}(x)=-\dfrac{a}{x^2}+\dfrac{1}{x}$,所以<br>  $$<br>  \begin{aligned}<br>  &amp;x_1 f^{\prime}(x_1)+x_2 f^{\prime}(x_2) &gt; 2\ln a+2\\<br>  \iff &amp;-\dfrac{a}{x_1}+1-\dfrac{a}{x_2}+1 &gt; 2\ln a+2\\<br>  \iff &amp;\ln (x_1 x_2) &gt; 2\ln a\\<br>  \iff &amp;x_1 x_2 &gt;  a^2<br>  \end{aligned}<br>  $$<br>  所以问题转化为:</p>
 <blockquote>
 <p>若函数$f(x)=\dfrac{a}{x}+\ln x$有两个不同的零点$x_1,x_2$,<br>  求证:$x_1x_2 &gt; a^2.$</p>
-<h2 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h2><p>  当$a\leqslant0$时，$f^{\prime}(x)=\dfrac{x-a}{x^2} &gt; 0$,$f(x)$单调递增,<br>  不可能有两个零点,故$a &gt; 0$.<br>  若$ x \in(0, a), f^{\prime}(x) &lt;  0, f(x)$递减,<br>  若$x \in(a,+\infty), f^{\prime}(x) &gt; 0, f(x)$递增.<br>  不妨设 $0 &lt;  x_1 &lt;  a &lt;  x_2$.<br>  要证 $x_1 x_2 &gt; a^2$ 即证 $x_2 &gt; \dfrac{a^2}{x_1}$,<br>  注意到$\dfrac{a^2}{x_1} &gt; a, f(x)$ 在 $(a,+\infty)$上单调递增,<br>  只需证 $f(x_2) &gt; f(\dfrac{a^2}{x_1})$,<br>  又$f(x_1)=f(x_2)=0$, 只需证<br>  \begin{equation}<br>  f(x_1) &gt; f(\dfrac{a^2}{x_1})\tag{_}<br>  \end{equation}<br>  令$g(x)=f(x)-f(\dfrac{a^2}{x})$,则<br>  $$g^{\prime}(x)=f^{\prime}(x)+\dfrac{a^2}{x^2} f^{\prime}(\dfrac{a^2}{x})=\dfrac{-(a-x)^2}{a x^2} \leqslant 0$$<br>  所以$g(x)$在$(0, a]$上单调递减.<br>  因为$0 &lt;  x_1 &lt;  a$,所以<br>  $$<br>  g(x_1)=f(x_1)-f(\dfrac{a^2}{x_1}) &gt; g(a)=0<br>  $$<br>  即(_)成立，命题得证.</p>
 </blockquote>
+<h2 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h2><p>  当$a\leqslant0$时，$f^{\prime}(x)=\dfrac{x-a}{x^2} &gt; 0$,$f(x)$单调递增,<br>  不可能有两个零点,故$a &gt; 0$.<br>  若$ x \in(0, a), f^{\prime}(x) &lt;  0, f(x)$递减,<br>  若$x \in(a,+\infty), f^{\prime}(x) &gt; 0, f(x)$递增.<br>  不妨设 $0 &lt;  x_1 &lt;  a &lt;  x_2$.<br>  要证 $x_1 x_2 &gt; a^2$ 即证 $x_2 &gt; \dfrac{a^2}{x_1}$,<br>  注意到$\dfrac{a^2}{x_1} &gt; a, f(x)$ 在 $(a,+\infty)$上单调递增,<br>  只需证 $f(x_2) &gt; f(\dfrac{a^2}{x_1})$,<br>  又$f(x_1)=f(x_2)=0$, 只需证<br>  \begin{equation}<br>  f(x_1) &gt; f(\dfrac{a^2}{x_1})\tag{_}<br>  \end{equation}<br>  令$g(x)=f(x)-f(\dfrac{a^2}{x})$,则<br>  $$g^{\prime}(x)=f^{\prime}(x)+\dfrac{a^2}{x^2} f^{\prime}(\dfrac{a^2}{x})=\dfrac{-(a-x)^2}{a x^2} \leqslant 0$$<br>  所以$g(x)$在$(0, a]$上单调递减.<br>  因为$0 &lt;  x_1 &lt;  a$,所以<br>  $$<br>  g(x_1)=f(x_1)-f(\dfrac{a^2}{x_1}) &gt; g(a)=0<br>  $$<br>  即(_)成立，命题得证.</p>
 <h2 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h2><blockquote>
 <p>若函数$f(x)=\dfrac{a}{x}+\ln x$有两个不同的零点$x_1,x_2$,<br>  求证:$x_1x_2 &gt; a^2.$ </p>
 </blockquote>
