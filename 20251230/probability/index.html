@@ -82,16 +82,16 @@
 <meta name="description" content="题目  如图,一只蚂蚁从单位正方体$ABCD -A_1B_1C_1D_1$的顶点$A$ 出发,每一步(均为等可能性的)经过一条边到达另一顶点,设该蚂蚁经过$n$步回到点$ A$ 的概率为 $ p_n $.  分别写出 $ p_1, p_2 $ 的值; 设一只蚂蚁从顶点 $ A $ 出发经过 $ n $ 步到达点 $ C $ 的概率为 $ q_n $，求 $ p_n + 3q_n $ 的值; 求 $">
 <meta name="keywords" content="概率">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一道与数列递推关系相关的概率难题">
+<meta property="og:title" content="概率与递推">
 <meta property="og:url" content="https://github.com/zhaowanlong/zhaowanlong.github.io/20251230/probability/index.html">
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目  如图,一只蚂蚁从单位正方体$ABCD -A_1B_1C_1D_1$的顶点$A$ 出发,每一步(均为等可能性的)经过一条边到达另一顶点,设该蚂蚁经过$n$步回到点$ A$ 的概率为 $ p_n $.  分别写出 $ p_1, p_2 $ 的值; 设一只蚂蚁从顶点 $ A $ 出发经过 $ n $ 步到达点 $ C $ 的概率为 $ q_n $，求 $ p_n + 3q_n $ 的值; 求 $">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhaowanlong.github.io/image/20251230-1.png">
 <meta property="og:image" content="https://zhaowanlong.github.io/image/20251230-2.png">
-<meta property="og:updated_time" content="2025-12-30T08:04:56.766Z">
+<meta property="og:updated_time" content="2025-12-30T08:11:56.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一道与数列递推关系相关的概率难题">
+<meta name="twitter:title" content="概率与递推">
 <meta name="twitter:description" content="题目  如图,一只蚂蚁从单位正方体$ABCD -A_1B_1C_1D_1$的顶点$A$ 出发,每一步(均为等可能性的)经过一条边到达另一顶点,设该蚂蚁经过$n$步回到点$ A$ 的概率为 $ p_n $.  分别写出 $ p_1, p_2 $ 的值; 设一只蚂蚁从顶点 $ A $ 出发经过 $ n $ 步到达点 $ C $ 的概率为 $ q_n $，求 $ p_n + 3q_n $ 的值; 求 $">
 <meta name="twitter:image" content="https://zhaowanlong.github.io/image/20251230-1.png">
 
@@ -129,7 +129,7 @@
 
 
 
-  <title>一道与数列递推关系相关的概率难题 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>概率与递推 | iMathZhao</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -337,7 +337,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一道与数列递推关系相关的概率难题</h1>
+          <h1 class="post-title" itemprop="name headline">概率与递推</h1>
         
 
         <div class="post-meta">
@@ -427,7 +427,7 @@
 <li><p>$p_1 = 0,\quad p_2 = 3 \times ( \dfrac{1}{3} \times \dfrac{1}{3}) = \dfrac{1}{3}$.</p>
 <center><br><img src="https://zhaowanlong.github.io/image/20251230-2.png" alt="20251230-2" style="zoom:30%;"><br></center> 
 </li>
-<li><p>由对称性,<br>$n$步后到$ B, A_1, D$概率相等，分别记为$ r_n $,<br>$n$步后到$ C, B_1, D_1 $概率相等，分别记为$ q_n $,<br>$n$步后到$ A, C_1 $概率分别为$ p_n, s_n $.<br>则<br>\begin{equation}<br>p_n + 3q_n + 3r_n + s_n = 1 \tag{1}<br>\end{equation}<br>\begin{equation}<br>p_{n+1} = 3r_n \times \dfrac{1}{3} = r_n \tag{2}<br>\end{equation}<br>\begin{equation}<br>q_{n+1} = (2r_n + s_n) \times \dfrac{1}{3} = \dfrac{2}{3}r_n + \dfrac{1}{3}s_n \tag{3}<br>\end{equation}<br>由$(2)+3\times(3)$得$$p_{n+1} + 3q_{n+1} = 3r_n + s_n$$<br>代入$(1)$得$$ p_n + 3q_n + (p_{n+1} + 3q_{n+1}) = 1 $$<br>所以$$ p_{n+1} + 3q_{n+1} - \dfrac{1}{2} = -( p_n + 3q_n - \dfrac{1}{2}) $$<br>又$ p_1 = q_1 = 0 $，故$\{ p_n + 3q_n - \dfrac{1}{2} \} $是首项为$ -\dfrac{1}{2} $公比为$ -1 $的等比数列.<br>因此<br>$$ p_n + 3q_n - \dfrac{1}{2} = -\dfrac{1}{2} \cdot (-1)^{n-1} $$<br>所以$$ p_n + 3q_n = \dfrac{1 + (-1)^n}{2}\tag{4} $$</p>
+<li><p>由对称性,<br>$n$步后到$ B, A_1, D$概率相等，分别记为$ r_n $,<br>$n$步后到$ C, B_1, D_1 $概率相等，分别记为$ q_n $,<br>$n$步后到$ A, C_1 $概率分别为$ p_n, s_n $.则<br>\begin{equation}<br>p_n + 3q_n + 3r_n + s_n = 1 \tag{1}<br>\end{equation}<br>\begin{equation}<br>p_{n+1} = 3r_n \times \dfrac{1}{3} = r_n \tag{2}<br>\end{equation}<br>\begin{equation}<br>q_{n+1} = (2r_n + s_n) \times \dfrac{1}{3} = \dfrac{2}{3}r_n + \dfrac{1}{3}s_n \tag{3}<br>\end{equation}<br>由$(2)+3\times(3)$得$$p_{n+1} + 3q_{n+1} = 3r_n + s_n$$<br>代入$(1)$得$$ p_n + 3q_n + (p_{n+1} + 3q_{n+1}) = 1 $$<br>所以$$ p_{n+1} + 3q_{n+1} - \dfrac{1}{2} = -( p_n + 3q_n - \dfrac{1}{2}) $$<br>又$ p_1 = q_1 = 0 $，故$\{ p_n + 3q_n - \dfrac{1}{2} \} $是首项为$ -\dfrac{1}{2} $公比为$ -1 $的等比数列.<br>因此<br>$$ p_n + 3q_n - \dfrac{1}{2} = -\dfrac{1}{2} \cdot (-1)^{n-1} $$<br>所以$$ p_n + 3q_n = \dfrac{1 + (-1)^n}{2}\tag{4} $$</p>
 </li>
 <li>因为 $r_{n}=\dfrac{2}{3}q_{n-1}+\dfrac{1}{3}p_{n-1}$ 代入 $(2) $得<br>\begin{equation}<br>p_{n+1}=r_n=\dfrac{2}{3}q_{n-1}+\dfrac{1}{3}p_{n-1} \tag{5}<br>\end{equation}<br>由 $(4)$得, $q_{n-1}=\dfrac{1}{3}(\dfrac{1-(-1)^n}{2}-p_{n-1})$ 代入$ (5)$<br>$$p_{n+1}=\dfrac{2}{9}(\dfrac{1-(-1)^n}{2}-p_{n-1})+\dfrac{1}{3}p_{n-1}$$<br>所以<br>$$p_{n+1}=\dfrac{1}{9}p_{n-1}+\dfrac{1-(-1)^n}{9}$$<br>所以<br>\begin{equation}<br>p_{n}=\dfrac{1}{9}p_{n-2}+\dfrac{1+(-1)^n}{9} \tag{6}<br>\end{equation}<br>当 $n$ 为奇数时, $p_{n}=\dfrac{1}{9}p_{n-2}$, 由 $p_{1}=0$ 得 $p_{n}=0$.<br>当 $n$ 为偶数时, 取 $n=2k (k\in \mathbb{N}^*)$, 由 (6) 得<br>$$p_{2k}=\dfrac{1}{9}p_{2k-2}+\dfrac{2}{9}$$<br>所以<br>$$p_{2k}-\dfrac{1}{4}=\dfrac{1}{9}(p_{2k-2}-\dfrac{1}{4})$$<br>所以 $\{p_{2k}\}$ 是首项为 $p_{2}-\dfrac{1}{4}=\dfrac{1}{12}$、公比为 $\dfrac{1}{9}$ 的等比数列, 所以<br>$$p_{2k}-\dfrac{1}{4}=\dfrac{1}{12}\cdot(\dfrac{1}{9})^{k-1}$$<br>所以<br>$$p_{2k}=\dfrac{1}{4}+\dfrac{1}{12}\cdot(\dfrac{1}{9})^{k-1}=\dfrac{1}{4}+\dfrac{1}{4\times3^{2k-1}}$$<br>所以 $n$ 为偶数时, $p_{n}=\dfrac{1}{4}+\dfrac{1}{4\times3^{n-1}}$.</li>
 </ol>
