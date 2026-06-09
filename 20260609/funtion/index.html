@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="iMathZhao">
 <meta property="og:description" content="题目 ( 2026年新高考全国2卷第$19$题 )  已知函数$f(x) = xe^x + ax + b $,曲线$y = f(x) $ 在点$ (0, f(0)) $ 处的切线方程为$ y = -2x + 1 .$  求 $ a, b $; 当 $ x &amp;gt; 0 $ 时，$ f(x + m) - f(x) &amp;gt; m $，求 $ m $ 的取值范围; 当 $ x &amp;gt; 0 $ 时，$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2026-06-09T03:35:15.909Z">
+<meta property="og:updated_time" content="2026-06-09T04:05:36.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2026年新高考全国2卷压轴题解析">
 <meta name="twitter:description" content="题目 ( 2026年新高考全国2卷第$19$题 )  已知函数$f(x) = xe^x + ax + b $,曲线$y = f(x) $ 在点$ (0, f(0)) $ 处的切线方程为$ y = -2x + 1 .$  求 $ a, b $; 当 $ x &amp;gt; 0 $ 时，$ f(x + m) - f(x) &amp;gt; m $，求 $ m $ 的取值范围; 当 $ x &amp;gt; 0 $ 时，$">
@@ -423,13 +423,13 @@
 <ul>
 <li>当 $ m &gt; 0 $ 时，<br>$$g’(x) = (x + m + 1)e^{x + m} - (x + 1)e^x = e^x [(e^m - 1)x + (m+1)e^m - 1].$$<br>由$x &gt; 0 ,m&gt;0$ 得$ (e^m - 1)x &gt; 0 $，且 $ (m+1)e^m - 1 &gt; 0 $，所以 $ g’(x) &gt; 0 $.<br>故 $ g(x) $ 在 $ (0, +\infty) $ 上单调递增.只需<br>$$g(0) = m e^m - 4m = m(e^m - 4) \geqslant 0.$$<br>解得 $ m \geqslant  2\ln 2 $.</li>
 <li>当 $ m = 0 $ 时,$f(x+m) - f(x) &gt; m $ 即 $ 0 &gt; 0 $，矛盾.</li>
-<li>当 $ m &lt; 0 $ 时,取实数 $ x_0 &gt; \ln 4 - m &gt;0$,则$$\begin{aligned}g(x_0) = (x_0 + m)e^{x_0 + m} - x_0 e^{x_0} - 4m= x_0 e^{x_0}(e^m - 1) + m(e^{x_0 + m} - 4).\end{aligned}$$ 由$x_0 &gt; 0, m &lt; 0 $,故$x_0 e^{x_0}(e^m - 1)<0$. 由$x_0=""> \ln 4 - m $ 得 $ e^{x_0 + m} &gt; 4$,又$m<0$,故$m(e^{x_0 0="" +="" m}="" -="" 4)="" <="" 0.$="" 因此="" $="" g(x_0)="" $，与="" g(x)=""> 0 $ 矛盾.</0$,故$m(e^{x_0></0$.></li>
+<li>当 $ m &lt; 0 $ 时,取实数 $ x_0 &gt; \ln 4 - m &gt;0$,则$$\begin{aligned}g(x_0) = (x_0 + m)e^{x_0 + m} - x_0 e^{x_0} - 4m= x_0 e^{x_0}(e^m - 1) + m(e^{x_0 + m} - 4).\end{aligned}$$ 由$x_0 &gt; 0, m &lt; 0 $,故$x_0 e^{x_0}(e^m - 1) &lt; 0$.<br>由$x_0 &gt; \ln 4 - m $ 得 $ e^{x_0 + m} &gt; 4$,又$m &lt; 0$,故$m(e^{x_0 + m} - 4) &lt; 0.$<br>因此 $ g(x_0) &lt; 0 $，与 $ g(x) &gt; 0 $ 矛盾.</li>
 </ul>
 <p>综上，$ m $ 的取值范围是 $ [2\ln 2, +\infty) $.</p>
 <h2 id="第三问解答"><a href="#第三问解答" class="headerlink" title="第三问解答"></a>第三问解答</h2><p>令 $h(x) = f(k+x) + f(k-x)-2f(k)(x\geqslant 0) $,<br>只需 $x &gt; 0$时,$h(x) &gt; 0$.<br>由 $ f’(x) = (x+1)e^{x}-3 $ 得<br>$$\begin{aligned} h’(x) &amp;= f’(k+x) - f’(k-x) \\\\<br>&amp;= (k+x+1)e^{k+x} - (k-x+1)e^{k-x} \\\\<br>&amp;= e^{k-x}[e^{2x}(k+x+1)+x-k-1] \end{aligned}$$<br>令 $\varphi(x) =e^{2x}(k+x+1)+x-k-1$，且 $ \varphi(0) = 0 $,<br>则$\varphi’(x) =e^{2x} + 2e^{2x}(k + x + 1)+1=e^{2x}(2k+2x+3)+1$,且$ \varphi(0) = 2k+4 $,<br>则$ \varphi’’(x) = 2e^{2x}(2k+2x+3) + 2e^{2x} = 4e^{2x}(x + k + 2)$.</p>
 <ul>
 <li>当$k\geqslant-2$时,若$x\in(0,+\infty),\varphi’’(x)&gt;0$,$\varphi’(x)$递增,<br>所以$ \varphi’(x)&gt;\varphi’(0)=2k+4\geqslant0$,所以$ \varphi(x)$,递增,<br>所以$ \varphi(x)&gt; \varphi(0)=0$,即$h’(x)=e^{k-x}\varphi(x)&gt;0$.<br>所以$h(x)$在$(0,+\infty)$递增,<br>所以$x &gt; 0$时,$h(x) &gt; h(0)=0$,命题成立.</li>
-<li>当$k&lt;-2$时,令$\varphi’’(x)=0$得$x=-(k+2)&gt;0$,<br>若$x\in(0,-(k+2)),\varphi’’(x)<0$,$\varphi'(x)$递减, 所以$="" \varphi'(x)="" <="" \varphi'(0)="2k+4<0$,所以$" \varphi(x)$,递减,="" \varphi(x)="" \varphi(0)="0$,即$h'(x)=e^{k-x}\varphi(x)<0$." 所以$h(x)$在$(0,-(k+2))$递减,="" 所以$x\in(0,-(k+2))="" $时,$h(x)="" h(0)="0$,.与$h(x)">0$矛盾.</0$,$\varphi'(x)$递减,></li>
+<li>当$k&lt;-2$时,令$\varphi’’(x)=0$得$x=-(k+2)&gt;0$,<br>若$x\in(0,-(k+2)),\varphi’’(x) &lt; 0$,$\varphi’(x)$递减,<br>所以$ \varphi’(x) &lt; \varphi’(0)=2k+4 &lt; 0$,所以$ \varphi(x)$,递减,<br>所以$ \varphi(x) &lt; \varphi(0)=0$,即$h’(x)=e^{k-x}\varphi(x) &lt; 0$.<br>所以$h(x)$在$(0,-(k+2))$递减,<br>所以$x\in(0,-(k+2)) $时,$h(x) &lt; h(0)=0$,.与$h(x)&gt;0$矛盾.</li>
 </ul>
 <p>综上所述,$k\geqslant-2$,所以$k_{\min}=-2$.</p>
 
